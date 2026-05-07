@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #1B1D1E;
+  --card-bg: #424E4F;
+  --primary-accent: #00DE00;
+  --secondary-accent: #00AD5A;
+  --text-main: #FFFFFF;
+  --text-muted: #5E6D70;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course portal home page for WDD 231.">
+    <meta name="author" title="Jp Lawrence">
+    <title>Jp Lawrence | WDD 231 | Web Frontend Development</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4773b6cf54.js" crossorigin="anonymous" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo">
+        <span>WDD231</span>
+        <button id="menu-button" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About me</h2>
+            <p></p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div>
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div>
+                <div class="course-card"></div>
+            </div>
+            <p>The total credits for the courses listed above is 6</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
