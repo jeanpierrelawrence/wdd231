@@ -1,15 +1,247 @@
 :root {
   --bg-color: #1B1D1E;
-  --card-bg: #424E4F;
+  --card-bg: #222829;
   --primary-accent: #00DE00;
   --secondary-accent: #00AD5A;
   --text-main: #FFFFFF;
   --text-muted: #5E6D70;
+
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+
+/*********************************************************************/
+/****************************** GLOBALS ******************************/
+/*********************************************************************/
 
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+}
+
+header, main, footer {
+    padding: 2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 1.875rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+/*********************************************************************/
+/******************************* HEADER ******************************/
+/*********************************************************************/
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background-color: var(--text-main);
+}
+
+header img {
+    display: block;
+    width: 30px;
+    height: auto;
+    margin-inline: auto;
+}
+
+header .word-mark {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--secondary-accent);
+}
+
+header .word-mark small {
+    font-weight: 300;
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-button .fa-xmark {
+    display: none;
+}
+
+#menu-button.active .fa-bars {
+    display: none;
+}
+#menu-button.active .fa-xmark {
+    display: block;
+}
+
+/*********************************************************************/
+/******************************** NAV ********************************/
+/*********************************************************************/
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-100%);
+
+    background-color: var(--text-main);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 1rem 2rem;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding: 1.5rem 2rem;
+    background-color: var(--secondary-accent);
+    margin-block: 0.5rem;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-accent);
+}
+
+nav.active {
+    transform: translateY(120px);
+}
+
+nav ul li a.current {
+    background-color: var(--primary-accent);
+}
+
+/*********************************************************************/
+/***************************** ABOUT ME ******************************/
+/*********************************************************************/
+
+main h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--bg-color);
+}
+
+.about {
+    background: linear-gradient(to bottom right, var(--primary-accent), var(--secondary-accent));
+}
+
+.about h2 {
+    color: var(--bg-color);
+    text-transform: uppercase;
+    letter-spacing: var(--secondary-accent);
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+.about p {
+    color: var(--bg-color);
+}
+
+/*********************************************************************/
+/****************************** PHOTO ********************************/
+/*********************************************************************/
+
+.photo {
+    display: grid;
+    place-content: center;
+    margin-block: 2rem;
+}
+
+.photo figure {
+    height: auto;
+}
+
+.photo figure img {
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*********************************************************************/
+/***************************** COURSES *******************************/
+/*********************************************************************/
+
+.course-section {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+#course-btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#course-btns button {
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    color: var(--text-main);
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--card-bg);
+    transition: 0.2s ease-in-out;
+}
+
+#course-btns button:hover {
+    background-color: var(--primary-accent);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+#courses-list {
+    list-style-type: none;
+    padding-block: 2rem;
+}
+
+#courses-list li {
+    background-color: var(--text-muted);
+    text-align: center;
+    border-radius: 12px;
+    padding-block: 1.25rem;
+    margin-block: 1rem;
+}
+
+.course-section p {
+    text-align: center;
+}
+
+/*********************************************************************/
+/***************************** FOOTER ********************************/
+/*********************************************************************/
+
+footer {
+    text-align: center;
+    border-radius: 12px;
 }

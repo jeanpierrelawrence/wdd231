@@ -17,48 +17,57 @@
 
     <script src="https://kit.fontawesome.com/4773b6cf54.js" crossorigin="anonymous" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 <body>
     <header>
         <img src="images/logo.svg" alt="Logo">
-        <span>WDD231</span>
+        <span class="word-mark">wdd<small>231</small></span>
         <button id="menu-button" aria-label="Toggle Menu">
             <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
         </button>
     </header>
-    <nav>
+    <nav id="nav">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="current">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
+        <section class="about card">
             <h2>About me</h2>
-            <p></p>
+            <p>I'm someone who loves building things — whether that's websites, creative projects, business ideas, or even improving my PC setup piece by piece. I'm really interested in science, technology, design, and music, especially orchestral and cinematic styles. I enjoy learning new things (currently Swedish 🇸🇪), exploring deep conversations about ideas and beliefs, and creating content that actually teaches and helps people. I'm also the kind of person who can spend hours refining a design, researching random topics, or getting completely absorbed in a new project idea.</p>
         </section>
-        <section>
+        <section class="photo card">
             <h2>Student Photo</h2>
+            <figure>
+                <img src="images/me.avif" alt="Jp Lawrence">
+            </figure>
         </section>
-        <section>
+        <section class="course-section card">
             <h2>Web Certificate Courses</h2>
-            <div>
+            <div id="course-btns">
                 <button>All</button>
                 <button>CSE</button>
                 <button>WDD</button>
             </div>
-            <div>
-                <div class="course-card"></div>
-            </div>
+            <ul id="courses-list">
+                <li>WDD130</li>
+                <li>WDD131</li>
+                <li>WDD231</li>
+            </ul>
             <p>The total credits for the courses listed above is 6</p>
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
-        <p id="lastModified"></p>
-    </footer>
+        <div class="footer-card card">
+            <p>&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer> 
 </body>
 </html>
