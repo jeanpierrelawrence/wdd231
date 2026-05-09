@@ -18,6 +18,7 @@
     <script src="https://kit.fontawesome.com/4773b6cf54.js" crossorigin="anonymous" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 
 </head>
 <body>
@@ -51,20 +52,25 @@
         <section class="course-section card">
             <h2>Web Certificate Courses</h2>
             <div id="course-btns">
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
             </div>
             <ul id="courses-list">
-                <li>WDD130</li>
-                <li>WDD131</li>
-                <li>WDD231</li>
             </ul>
-            <p>The total credits for the courses listed above is 6</p>
+            <p>The total credits for the courses listed above is <span id="total-credits">0</span></p>
         </section>
     </main>
     <footer>
         <div class="footer-card card">
+            <nav id="socials">
+                <ul>
+                    <li><a href="https://github.com/jeanpierrelawrence/wdd231"><i class="fa-brands fa-github fa-2xl" style="color: rgb(0, 0, 0);"></i></a></li>
+                    <li><a href="www.linkedin.com/in/jeanpierrelawrence"><i class="fa-brands fa-square-linkedin fa-2xl" style="color: rgb(0, 0, 0);"></i></a></li>
+                        <li><a href="https://www.facebook.com/jp.lawrence.311/"><i class="fa-brands fa-facebook fa-2xl" style="color: rgb(0, 0, 0);"></i></a></li>
+                        <li><a href="https://www.instagram.com/jp.lwrxe/"><i class="fa-brands fa-instagram fa-2xl" style="color: rgb(0, 0, 0);"></i></a></li>
+                </ul>
+            </nav>
             <p>&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
             <p id="lastModified"></p>
         </div>

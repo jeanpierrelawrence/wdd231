@@ -22,4 +22,41 @@
         padding: 1rem 2rem;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 150px repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    main h1 {
+        grid-column: span 2;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-block: auto;
+    }
+
+    .photo {
+        display: grid;
+        place-content: center;
+        margin-block: 0;
+    }
+
+    .photo figure {
+        height: auto;
+    }
+
+    .photo figure img {
+        aspect-ratio: 3/4;
+    }
+
+    .course-section {
+        grid-column: span 2;
+    }
+
 }

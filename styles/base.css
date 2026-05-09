@@ -20,6 +20,11 @@
     font-family: "Open Sans", sans-serif;
 }
 
+body {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 header, main, footer {
     padding: 2rem;
 }
@@ -40,6 +45,13 @@ p {
     border-radius: 12px;
     padding: 2rem;
     box-shadow: var(--shadow);
+}
+
+.completed {
+    border-left: 15px solid var(--primary-accent);
+}
+.incomplete {
+    border-left: 15px solid red;
 }
 
 /*********************************************************************/
@@ -171,9 +183,10 @@ main h1 {
 /*********************************************************************/
 
 .photo {
-    display: grid;
-    place-content: center;
-    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-block: 0rem;
+    overflow: hidden;
 }
 
 .photo figure {
@@ -244,4 +257,18 @@ main h1 {
 footer {
     text-align: center;
     border-radius: 12px;
+}
+
+#socials ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    padding-bottom: 2rem;
+}
+
+#socials ul li a {
+    background-color: transparent;
+    padding: 0;
 }
