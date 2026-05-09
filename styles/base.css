@@ -82,6 +82,7 @@ header .word-mark {
 
 header .word-mark small {
     font-weight: 300;
+    color: #000;
 }
 
 header button {
@@ -132,7 +133,7 @@ nav ul li a {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     padding: 1.5rem 2rem;
-    background-color: var(--secondary-accent);
+    background-color: var(--bg-color);
     margin-block: 0.5rem;
     border-radius: 6px;
     transition: 0.2s ease-in-out;
@@ -140,6 +141,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: var(--primary-accent);
+    color: #000;
 }
 
 nav.active {
@@ -148,6 +150,7 @@ nav.active {
 
 nav ul li a.current {
     background-color: var(--primary-accent);
+    color: #000;
 }
 
 /*********************************************************************/
