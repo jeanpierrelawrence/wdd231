@@ -275,3 +275,7 @@ footer {
     background-color: transparent;
     padding: 0;
 }
+
+#socials svg.svg-inline--fa {
+    color: var(--bg-color);
+}
