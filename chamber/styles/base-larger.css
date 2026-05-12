@@ -109,7 +109,6 @@
         transition: var(--transition-bezier);
     }
 
-    /* Position one above and one below */
     .primary-nav ul li a::before {
         bottom: -5px;
         transform-origin: left;
@@ -120,7 +119,6 @@
         transform-origin: right;
     }
 
-    /* Trigger both on hover */
     .primary-nav ul li a:hover::before, 
     .primary-nav ul li a:hover::after {
         transform: scaleX(1);
