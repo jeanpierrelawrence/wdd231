@@ -1,0 +1,60 @@
+:root {
+    --dark: #000;
+    --light: #F5F2EA;
+    --accent: #00DE00;
+}
+
+/* 1. Helvetica Compressed - Main Display/Heading Font */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-compressed.woff2') format('woff2');
+    font-weight: 700;
+    font-stretch: condensed;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. Helvetica Bold */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 3. Helvetica Bold Oblique */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-bold-oblique.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 4. Helvetica Regular */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 5. Helvetica Light */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*******************************************
+***************** GLOBALS ******************
+*******************************************/
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: 400;
+}
