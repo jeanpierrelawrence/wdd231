@@ -2,11 +2,14 @@
     --dark: #000;
     --light: #F5F2EA;
     --accent: #00DE00;
+
+    --font-heading: 'Helvetica-Compressed', Arial, sans-serif;
+    --font-body: 'Helvetica', Arial, sans-serif;
 }
 
 /* 1. Helvetica Compressed - Main Display/Heading Font */
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica-Compressed';
     src: url('fonts/helvetica-compressed.woff2') format('woff2');
     font-weight: 700;
     font-stretch: condensed;
@@ -54,7 +57,33 @@
 ***************** GLOBALS ******************
 *******************************************/
 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: 400;
+}
+
+/*******************************************
+***************** HEADER *******************
+*******************************************/
+
+
+
+/*******************************************
+***************** MAIN ******************
+*******************************************/
+
+/*******************************************
+***************** FOOTER *******************
+*******************************************/
+
+footer {
+    background-color: var(--accent);
+    color: var(--dark);
+    text-align: center;
 }
