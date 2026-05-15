@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Bootlegger",
+      "address": "42 Caledon Street, Lionviham, Cape Town,",
+      "phone": "021 203 5178",
+      "website": "https://www.bootlegger.coffee/",
+      "image": "bootlegger.avif",
+      "membershipLevel": 3,
+      "description": "Bootlegger Coffee Company was created in 2012 by 3 best friends, Pieter Bloem, De Waal Basson & Antonie Basson. The brand has now grown into multiple stores all over Cape Town and Johannesburg."
+    },
+    {
+      "name": "Gridweb",
+      "address": "200 Uys Krige Dr, Plattekloof 2, Cape Town",
+      "phone": "021 300 1841",
+      "website": "https://gridweb.co.za/",
+      "image": "gridweb.avif",
+      "membershipLevel": 1,
+      "description": "Gridweb is a web design company in Cape Town that develops custom websites focused on growing your brand, expanding your reach, and consistently delivering results."
+    },
+    {
+      "name": "MinuteMan",
+      "address": " Unit 12b Melcksloot Village, c/o Reese Rd & De Beers Ave, Somerset West, Western Cape 7130",
+      "phone": "021 850 0506/0478",
+      "website": "https://www.minuteman.com",
+      "image": "minuteman.svg",
+      "membershipLevel": 2,
+      "description": "Minuteman Press Stellenbosch provides comprehensive and quality printing, design and signage services to businesses and individuals alike."
+    },
+    {
+      "name": "Snupit",
+      "address": "2 Sanders Road, Scottsville, Pietermaritzburg, South Africa",
+      "phone": "010 541 0200",
+      "website": "https://www.snupit.co.za",
+      "image": "snupit.avif",
+      "membershipLevel": 1,
+      "description": "Welcome to Snupit, South Africa's leading online marketplace for home service and repair needs. We make it easy to find local professionals near you, quickly and safely."
+    },
+    {
+      "name": "Roy's Plumbers",
+      "address": "3 Bergzicht Rd, Radloff Park, Cape Town, 7130",
+      "phone": "060 060 3869",
+      "website": "https://www.somersetweststrandplumbers.co.za/",
+      "image": "professional-local-plumber.avif",
+      "membershipLevel": 1,
+      "description": "We're your local world-class plumbing company that offers quick and high-quality plumbing services in Somerset West, Strand, Gordons Bay and the nearby areas. "
+    },
+    {
+      "name": "The Potter's Place",
+      "address": "Shop 10, Lions Square Shopping Centre, Somerset West",
+      "phone": "082 573 4645",
+      "website": "https://the-potters-place.co.za",
+      "image": "the-potters-place.webp",
+      "membershipLevel": 2,
+      "description": "We present enriching ceramic classes that focus on the timeless art of hand-building techniques, sculptural creations, and wheel work in the heart of Somerset West."
+    },
+    {
+      "name": "The Village Bicycle",
+      "address": "206 Main Road, Somerset West, Cape Town 7130",
+      "phone": "021 492 4333",
+      "website": "https://thevillagebicycle.online",
+      "image": "thevillagebicycle.avif",
+      "membershipLevel": 2,
+      "description": "Nestled in the heart of Harfield Village, The Village Bicycle has been serving up scrumptious pizzas and creating lasting memories for the past 10 years"
+    }
+  ]
+}

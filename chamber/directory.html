@@ -15,12 +15,18 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-larger.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/display.js" defer></script>
 
 </head>
 <body>
@@ -45,7 +51,16 @@
             </ul>
         </nav>
     </div>
-    <main></main>
+    <main>
+        <section id="businesses">
+            <button id="grid-toggle" class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="business-container"></div>
+        </section>
+    </main>
     <footer>
         <p class="heading-sm">&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
         <p id="lastModified" class="heading-sm"></p>

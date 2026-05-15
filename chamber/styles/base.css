@@ -3,56 +3,10 @@
     --light: #F5F2EA;
     --accent: #00DE00;
 
-    --font-heading: 'Helvetica-Compressed', Arial, sans-serif;
-    --font-body: 'Helvetica', Arial, sans-serif;
+    --font-heading: 'Anton', Arial, sans-serif;
+    --font-body: 'Arimo', Arial, sans-serif;
 
     --transition-bezier: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
-}
-
-/* 1. Helvetica Compressed - Main Display/Heading Font */
-@font-face {
-    font-family: 'Helvetica-Compressed';
-    src: url('fonts/helvetica-compressed.woff2') format('woff2');
-    font-weight: 700;
-    font-stretch: condensed;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* 2. Helvetica Bold */
-@font-face {
-    font-family: 'Helvetica';
-    src: url('fonts/helvetica-bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* 3. Helvetica Bold Oblique */
-@font-face {
-    font-family: 'Helvetica';
-    src: url('fonts/helvetica-bold-oblique.woff2') format('woff2');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
-
-/* 4. Helvetica Regular */
-@font-face {
-    font-family: 'Helvetica';
-    src: url('fonts/helvetica.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* 5. Helvetica Light */
-@font-face {
-    font-family: 'Helvetica';
-    src: url('fonts/helvetica-light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
 }
 
 /*******************************************
@@ -66,7 +20,7 @@
 }
 
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: var(--font-body);
     font-weight: 400;
     background-color: var(--light);
 }
@@ -97,6 +51,17 @@ body.nav-open .logo-light { display: block; transition-delay: 0.5s;}
     font-size: 1.5rem;
     font-family: var(--font-heading);
     text-transform: uppercase;
+}
+
+.heading-md {
+    font-size: 3rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+}
+
+.button { 
+    padding: 1rem 2rem;
+    text-decoration: none;
 }
 
 /*******************************************
@@ -230,8 +195,123 @@ body.nav-open #primary-nav ul li:nth-child(4) { transition-delay: 0.8s; }
 
 
 /*******************************************
-***************** MAIN ******************
+***************** BUSINESS *****************
 *******************************************/
+
+#businesses {
+    display: grid;
+    place-items: center;
+}
+
+#business-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+#business-container article {
+    background-color: var(--light);
+    transition: transform 0.3s ease;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#business-container article .visit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    width: 100%;
+}
+
+#business-container article .visit h3 {
+    text-align: center;
+}
+
+#businesses article, #businesses article address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#businesses article img {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+#businesses article:first-of-type img, #businesses article:last-of-type img {
+    background-color: var(--dark);
+}
+
+#businesses article address {
+    font-style: normal;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#business-container article .visit a {
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: var(--dark);
+    background-color: var(--accent);
+}
+
+#business-container.list {
+    grid-template-columns: 1fr;
+}
+
+
+/* BUTTON */
+
+.toggle-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.toggle-btn span {
+    display: block;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background-color: var(--dark);
+    transition: all 0.4s var(--transition-bezier);
+}
+
+.toggle-btn span::before,
+.toggle-btn span::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--dark);
+    transition: all 0.4s var(--transition-bezier);
+}
+
+.toggle-btn span::before { left: -16px; }
+.toggle-btn span::after { left: 16px; }
+
+.toggle-btn.list-active span {
+    width: 28px;
+}
+
+.toggle-btn.list-active span::after {
+    display: none;
+}
+
 
 /*******************************************
 ***************** FOOTER *******************
