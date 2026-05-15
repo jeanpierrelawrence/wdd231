@@ -26,6 +26,9 @@ function DisplayCards(data) {
 
         image.setAttribute("src", `images/${item.image}`);
         image.setAttribute("alt", `${item.name}`)
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "200");
+        image.setAttribute("height", "100");
 
         title.textContent = `${item.name}`;
         title.classList.add("heading-md")
