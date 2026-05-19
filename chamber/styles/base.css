@@ -59,9 +59,21 @@ body.nav-open .logo-light { display: block; transition-delay: 0.5s;}
     text-transform: uppercase;
 }
 
+.heading-lg {
+    font-size: 7rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+}
+
+.body-text {
+    font-size: 2rem;
+}
+
 .button { 
     padding: 1rem 2rem;
     text-decoration: none;
+    transition: var(--transition-bezier);
 }
 
 /*******************************************
@@ -323,3 +335,36 @@ footer {
     color: var(--dark);
     text-align: center;
 }
+
+/*******************************************
+**************** HOMEPAGE ******************
+*******************************************/
+/*******************************************
+****************** HERO ********************
+*******************************************/
+
+.hero {
+    color: var(--light);
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    background-position: 85% center;
+
+    height: 750px;
+    padding: 2rem;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero .button {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.hero .button:hover {
+    background-color: var(--light);
+}
+

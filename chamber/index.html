@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Somerset West Chamber of Commerce</title>
+    <meta name="description" content="Explore the official business directory for the Somerset West Chamber of Commerce. Discover local businesses, services, and community partners in the Helderberg area.">
+    <meta name="author" content="Jp Lawrence">
+
+    <meta property="og:title" content="Member Directory - Somerset West Chamber of Commerce" />
+    <meta property="og:description" content="Connecting you with top-rated local businesses in Somerset West. Support our community by browsing our official member directory." />
+    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/chamber/images/og-image.png" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-larger.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+</head>
+<body>
+    
+    <div class="desktop-wrapper">
+        <header>
+            <div class="logo-wrapper">
+                <img src="images/logo-dark.svg" class="logo logo-dark" alt="SSW Logo">
+                <img src="images/logo-light.svg" class="logo logo-light" alt="SSW Logo">
+            </div>
+            <button id="menu-button" class="menu-button" aria-label="Open Menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </header>
+        <nav id="primary-nav" class="primary-nav">
+            <ul>
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">Discover</a></li>
+                <li><a href="directory.html" class="nav-link">Directory</a></li>
+                <li><a href="#" class="nav-link">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="hero">
+            <h1 class="heading-lg">Somerset West</h1>
+            <a href="#" class="hero-cta button heading-sm">Join</a>
+        </section>
+        <div class="events-weather-wrapper">
+            <section class="events">
+                <h2>Events</h2>
+                <ul class="event-card-wrapper">
+                    <li>
+                        <article class="event-card">
+                            <time datetime="2026-05-28T09:00" class="event-date">
+                            28 May 2026 // 09:00
+                            </time>
+                            <h3 class="heading-sm">Helderberg B2B Expo & Networking</h3>
+                            <p class="event-location">Venue: Lord Charles Hotel</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="event-card">
+                            <time datetime="2026-06-11T14:30" class="event-date">
+                            11 June 2026 // 14:30
+                            </time>
+                            <h3 class="heading-sm">Agro-Processing Roundtable</h3>
+                            <p class="event-location">Venue: Vergelegen Estate</p>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="event-card">
+                            <time datetime="2026-06-25T18:30" class="event-date">
+                            25 Jun 2026 // 18:30
+                            </time>
+                            <h3 class="heading-sm">Mid-Year Economic Outlook</h3>
+                            <p>Venue: Sitari Suite</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <section class="weather" aria-labelledby="weather-heading">
+                <h2 id="weather-heading">Current Conditions</h2>
+                
+                <div class="weather-display">
+                    <h3 id="area"></h3>
+
+                    <div class="weather-primary">
+                        <span class="weather-temp" id="temperature"></span>
+                        <img src="" alt="" id="weather-icon">
+                    </div>
+
+                    <dl class="weather-metrics">
+                        <dt>Sky</dt>
+                        <dd id="sky"></dd>
+
+                        <dt>Wind</dt>
+                        <dd id="wind"></dd>
+
+                        <dt>Humidity</dt>
+                        <dd id="humidity"></dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="heading-sm">&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
+        <p id="lastModified" class="heading-sm"></p>
+    </footer>
+
+</body>
+</html>

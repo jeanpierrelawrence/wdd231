@@ -12,7 +12,7 @@
 
     header {
         display: block; 
-        padding: 2rem 3rem;
+        padding: 2rem 6rem;
         z-index: 1001;
     }
 
@@ -127,6 +127,19 @@
     #business-container.list article img, 
     #business-container.list article address {
         display: block;
+    }
+
+    /*******************************************
+    **************** HOMEPAGE ******************
+    *******************************************/
+    /*******************************************
+    ****************** HERO ********************
+    *******************************************/
+
+    .hero {
+        align-items: start;
+        justify-content: center;
+        padding: 2rem 6rem;
     }
 
 }
