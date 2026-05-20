@@ -58,7 +58,7 @@
         </section>
         <div class="events-weather-wrapper">
             <section class="events">
-                <h2>Events</h2>
+                <h2 class="heading-lg">Events</h2>
                 <ul class="event-card-wrapper">
                     <li>
                         <article class="event-card">
@@ -78,40 +78,33 @@
                             <p class="event-location">Venue: Vergelegen Estate</p>
                         </article>
                     </li>
-
                     <li>
                         <article class="event-card">
                             <time datetime="2026-06-25T18:30" class="event-date">
                             25 Jun 2026 // 18:30
                             </time>
                             <h3 class="heading-sm">Mid-Year Economic Outlook</h3>
-                            <p>Venue: Sitari Suite</p>
+                            <p class="event-location">Venue: Sitari Suite</p>
                         </article>
                     </li>
                 </ul>
             </section>
             <section class="weather" aria-labelledby="weather-heading">
-                <h2 id="weather-heading">Current Conditions</h2>
-                
-                <div class="weather-display">
-                    <h3 id="area"></h3>
-
-                    <div class="weather-primary">
-                        <span class="weather-temp" id="temperature"></span>
-                        <img src="" alt="" id="weather-icon">
+                <h2 class="weather-heading heading-lg">Weather</h2>
+                <article class="weather-display">
+                    <div class="weather-display-left">
+                        <div class="temp-wrapper">
+                            <span class="weather-temp" id="temperature"></span>
+                            <span id="sky"></span>
+                        </div>
+                        <p id="temp-details"></p>
+                        <h3 id="area"></h3>
                     </div>
-
-                    <dl class="weather-metrics">
-                        <dt>Sky</dt>
-                        <dd id="sky"></dd>
-
-                        <dt>Wind</dt>
-                        <dd id="wind"></dd>
-
-                        <dt>Humidity</dt>
-                        <dd id="humidity"></dd>
-                    </dl>
-                </div>
+                    <div class="weather-display-right">
+                        <img src="" alt="" id="weather-icon">
+                        <span id="wind"></span>
+                    </div>
+                </article>
             </section>
         </div>
     </main>

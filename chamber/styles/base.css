@@ -63,11 +63,6 @@ body.nav-open .logo-light { display: block; transition-delay: 0.5s;}
     font-size: 7rem;
     font-family: var(--font-heading);
     text-transform: uppercase;
-    mix-blend-mode: difference;
-}
-
-.body-text {
-    font-size: 2rem;
 }
 
 .button { 
@@ -359,6 +354,10 @@ footer {
     flex-direction: column;
 }
 
+.hero .heading-lg {
+    mix-blend-mode: difference;
+}
+
 .hero .button {
     background-color: var(--accent);
     color: var(--dark);
@@ -367,4 +366,106 @@ footer {
 .hero .button:hover {
     background-color: var(--light);
 }
+
+/*******************************************
+****************** EVENTS ******************
+*******************************************/
+
+.events, .weather {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.events .heading-lg {
+    color: var(--dark);
+}
+
+.events .event-card-wrapper {
+    list-style: none;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 3rem;
+     padding-block: 2rem;
+}
+
+.events .event-card-wrapper li {
+    position: relative;
+}
+
+.events .event-card-wrapper li::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: hsl(44, 35%, 84%)
+}
+
+.events .event-card .event-date {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+}
+
+.events .event-card h3 {
+    padding-block: 1.5rem 0.5rem;
+}
+
+.events .event-card .event-location {
+    font-weight: 800;
+}
+
+/*******************************************
+****************** WEATHER *****************
+*******************************************/
+
+.weather .heading-lg {
+    padding-bottom: 2rem;
+}
+
+.weather .weather-display {
+    background-color: var(--dark);
+    color: var(--light);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    padding: 2rem 4rem;
+}
+
+.weather-display #temperature {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.weather-display .weather-display-left {
+    text-align: left;
+}
+
+.weather-display .weather-display-left .temp-wrapper {
+    padding-bottom: 1.5rem;
+}
+
+.weather-display .weather-display-left #temp-details {
+    color: #7e7e7e;
+}
+
+.weather-display .weather-display-left h3 {
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 0.3rem;
+}
+
+.weather-display .weather-display-right {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
 
