@@ -142,4 +142,30 @@
         padding: 2rem 6rem;
     }
 
+    /*******************************************
+    ************** EVENTS/WEATHER **************
+    *******************************************/
+
+}
+
+@media only screen and (min-width: 75.625rem) {
+    main .events-weather-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rotate-text-270 {
+        transform: rotate(270deg);
+    }
+
+    .events-weather-wrapper {
+        display: grid;
+        grid-template-columns: auto 450px;
+        padding-inline: 5rem;
+    }
+
+    .events, .weather {
+        align-items: center;
+        display: flex;
+    }
 }
