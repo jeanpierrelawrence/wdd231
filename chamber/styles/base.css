@@ -340,7 +340,7 @@ footer {
 
 .hero {
     color: var(--light);
-    background-image: url("../images/hero.png");
+    background-image: url("../images/hero.avif");
     background-size: cover;
     background-position: 85% center;
 
