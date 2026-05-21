@@ -22,16 +22,13 @@ function parseWeatherObjects(data) {
         return forecastItem.dt_txt.includes("12:00:00");
     })
 
-    return middayForecasts.slice(0, 3);
+    return middayForecasts.slice(0, 4);
 }
 
 function displayForecast(data) {
 
-    const tomorrowWeather = data[1];
-    const afterTomorrowWeather = data[2];
 
-    console.log(tomorrowWeather);
-    console.log(afterTomorrowWeather);
+    console.log(data);
 
     const tomorrow = document.querySelector("#forecast-day-2-name");
     const dayAfterTomorrow = document.querySelector("#forecast-day-3-name");
@@ -39,6 +36,9 @@ function displayForecast(data) {
     const dayAfterTomorrowImg = document.querySelector("#forecast-day3");
     const tomorrowTemp = document.querySelector("#forecast-day2-temp");
     const dayAfterTomorrowTemp = document.querySelector("#forecast-day3-temp");
+    const dayThreeFuture = document.querySelector("#forecast-day-4-name");
+    const dayThreeFutureImg = document.querySelector("#forecast-day4");
+    const dayThreeFutureTemp = document.querySelector("#forecast-day4-temp");
 
     data.forEach((forecastDay, index) => {
         const date = new Date(forecastDay.dt * 1000);
@@ -57,6 +57,11 @@ function displayForecast(data) {
             dayAfterTomorrowTemp.innerHTML = roundedTemp;
             dayAfterTomorrowImg.setAttribute("src", iconSrc);
             dayAfterTomorrowImg.setAttribute("alt", description);
+        } else if (index === 2) {
+            dayThreeFuture.textContent = dayName;
+            dayThreeFutureTemp.innerHTML = roundedTemp;
+            dayThreeFutureImg.setAttribute("src", iconSrc);
+            dayThreeFutureImg.setAttribute("alt", description);
         }
     });
 

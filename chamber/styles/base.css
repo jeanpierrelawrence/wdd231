@@ -2,6 +2,8 @@
     --dark: #000;
     --light: #F5F2EA;
     --accent: #00DE00;
+    --light-gray: #7e7e7e;
+    --dark-gray: #2e2e2e;
 
     --font-heading: 'Anton', Arial, sans-serif;
     --font-body: 'Arimo', Arial, sans-serif;
@@ -462,7 +464,7 @@ footer {
 }
 
 .weather-display .weather-display-left #temp-details {
-    color: #7e7e7e;
+    color: var(--light-gray);
 }
 
 .weather-display .weather-display-left h3 {
@@ -491,7 +493,7 @@ footer {
     bottom: 0;
     left: 0;
     height: 1px;
-    background-color: #2e2e2e;
+    background-color: var(--dark-gray);
     width: 100%;
 }
 
@@ -506,7 +508,7 @@ footer {
     font-size: 0.875rem;
     font-weight: 300;
     letter-spacing: 2px;
-    color: #7e7e7e;
+    color: var(--light-gray);
 }
 
 .weather-display .forecast li span {
