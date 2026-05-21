@@ -25,6 +25,10 @@ body {
     background-color: var(--light);
 }
 
+ul {
+    list-style-type: none;
+}
+
 main h1 {
     text-align: center;
 }
@@ -435,11 +439,13 @@ footer {
 .weather .weather-display {
     background-color: var(--dark);
     color: var(--light);
+    padding: 2rem 4rem;
+}
 
+.weather .today {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
-    padding: 2rem 4rem;
 }
 
 .weather-display #temperature {

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Somerset West Chamber of Commerce</title>
-    <meta name="description" content="Explore the official business directory for the Somerset West Chamber of Commerce. Discover local businesses, services, and community partners in the Helderberg area.">
+    <meta name="description" content="Official platform for the Somerset West Chamber of Commerce. Access regional business spotlights, current weather data, and upcoming events.">
     <meta name="author" content="Jp Lawrence">
 
-    <meta property="og:title" content="Member Directory - Somerset West Chamber of Commerce" />
-    <meta property="og:description" content="Connecting you with top-rated local businesses in Somerset West. Support our community by browsing our official member directory." />
-    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/chamber/directory.html" />
-    <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/chamber/images/og-image.png" />
+    <meta property="og:title" content="Official Homepage - Somerset West Chamber of Commerce" />
+    <meta property="og:description" content="Connecting community across the Helderberg basin. View business spotlights, current weather info, and upcoming chamber events." />
+    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/chamber/index.html" />
+    <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/chamber/images/og-image.avif" />
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
@@ -92,18 +92,32 @@
             <section class="weather" aria-labelledby="weather-heading">
                 <h2 class="weather-heading heading-lg rotate-text-270">Weather</h2>
                 <article class="weather-display">
-                    <div class="weather-display-left">
-                        <div class="temp-wrapper">
-                            <span class="weather-temp" id="temperature"></span>
-                            <span id="sky"></span>
+                    <div class="today">
+                        <div class="weather-display-left">
+                            <div class="temp-wrapper">
+                                <span class="weather-temp" id="temperature"></span>
+                                <span id="sky"></span>
+                            </div>
+                            <p id="temp-details"></p>
+                            <h3>Somerset West</h3>
                         </div>
-                        <p id="temp-details"></p>
-                        <h3 id="area"></h3>
+                        <div class="weather-display-right">
+                            <img id="weather-icon">
+                            <span id="wind"></span>
+                        </div>
                     </div>
-                    <div class="weather-display-right">
-                        <img src="" alt="" id="weather-icon">
-                        <span id="wind"></span>
-                    </div>
+                    <ul class="forecast">
+                        <li>
+                            <h4 id="forecast-day-2-name"></h4>
+                            <span id="forecast-day2-temp" class="temp"></span>
+                            <img src="" alt="" id="forecast-day2">
+                        </li>
+                        <li>
+                            <h4 id="forecast-day-3-name"></h4>
+                            <span id="forecast-day3-temp" class="temp"></span>
+                            <img src="" alt="" id="forecast-day3">
+                        </li>
+                    </ul>
                 </article>
             </section>
         </div>
