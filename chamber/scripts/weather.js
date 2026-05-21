@@ -27,9 +27,6 @@ function parseWeatherObjects(data) {
 
 function displayForecast(data) {
 
-
-    console.log(data);
-
     const tomorrow = document.querySelector("#forecast-day-2-name");
     const dayAfterTomorrow = document.querySelector("#forecast-day-3-name");
     const tomorrowImg = document.querySelector("#forecast-day2");
