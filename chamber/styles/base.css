@@ -383,7 +383,7 @@ footer {
 *******************************************/
 
 .events, .weather {
-    padding-top: 3rem;
+    padding-block: 3rem;
     text-align: center;
 }
 
