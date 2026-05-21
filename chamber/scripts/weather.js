@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const sky = document.querySelector('#sky');
 const wind = document.querySelector('#wind');
 const tempMinMax = document.querySelector("#temp-details");
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=-34.076&lon=18.84&units=metric&appid=6bd2ff36c364c6bbb99d41fb0e51bdf2`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=-34.076&lon=18.8&cnt=3&units=metric&appid=6bd2ff36c364c6bbb99d41fb0e51bdf2`;
 
 async function apiFetch() {
     try {

@@ -1,5 +1,23 @@
 @media only screen and (min-width: 38rem) {
 
+    .heading-sm {
+        font-size: 1.5rem;
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+    }
+
+    .heading-md {
+        font-size: 3rem;
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+    }
+
+    .heading-lg {
+        font-size: 7rem;
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+    }
+
     /*******************************************
     ***************** HEADER *******************
     *******************************************/
@@ -122,6 +140,14 @@
 
     #business-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #businesses article img {
+        display: block;
+        height: 100px;
+        width: auto;
+        object-fit: cover;
+        padding: 1rem;
     }
     
     #business-container.list article img, 

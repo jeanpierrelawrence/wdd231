@@ -48,19 +48,19 @@ body.nav-open .logo-light { display: block; transition-delay: 0.5s;}
 }
 
 .heading-sm {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-heading);
     text-transform: uppercase;
 }
 
 .heading-md {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: var(--font-heading);
     text-transform: uppercase;
 }
 
 .heading-lg {
-    font-size: 7rem;
+    font-size: 4rem;
     font-family: var(--font-heading);
     text-transform: uppercase;
 }
@@ -247,10 +247,7 @@ body.nav-open #primary-nav ul li:nth-child(4) { transition-delay: 0.8s; }
 }
 
 #businesses article img {
-    height: 100px;
-    width: auto;
-    object-fit: cover;
-    padding: 1rem;
+    display: none;
 }
 
 #businesses article:first-of-type img, #businesses article:last-of-type img {
@@ -295,7 +292,6 @@ body.nav-open #primary-nav ul li:nth-child(4) { transition-delay: 0.8s; }
     width: 8px;
     height: 8px;
     background-color: var(--dark);
-    transition: all 0.4s var(--transition-bezier);
 }
 
 .toggle-btn span::before,
@@ -305,7 +301,6 @@ body.nav-open #primary-nav ul li:nth-child(4) { transition-delay: 0.8s; }
     width: 8px;
     height: 8px;
     background-color: var(--dark);
-    transition: all 0.4s var(--transition-bezier);
 }
 
 .toggle-btn span::before { left: -16px; }
