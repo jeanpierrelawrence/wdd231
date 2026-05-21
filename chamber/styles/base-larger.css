@@ -141,14 +141,6 @@
     #business-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-
-    #businesses article img {
-        display: block;
-        height: 100px;
-        width: auto;
-        object-fit: cover;
-        padding: 1rem;
-    }
     
     #business-container.list article img, 
     #business-container.list article address {

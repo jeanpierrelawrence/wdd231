@@ -251,7 +251,15 @@ body.nav-open #primary-nav ul li:nth-child(4) { transition-delay: 0.8s; }
 }
 
 #businesses article img {
-    display: none;
+    display: block;
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+#business-container.list .company-logo {
+  display: none;
 }
 
 #businesses article:first-of-type img, #businesses article:last-of-type img {

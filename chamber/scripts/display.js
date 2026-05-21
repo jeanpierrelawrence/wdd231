@@ -2,6 +2,7 @@ const filePath = "data/members.json";
 const businessContainer = document.querySelector("#business-container");
 const toggleBtn = document.querySelector("#grid-toggle");
 const display = document.querySelector("#business-container");
+const companyLogo = document.querySelectorAll(".company-logo")
 
 async function FetchMembers() {
 
@@ -17,13 +18,14 @@ function DisplayCards(data) {
         
         const card = document.createElement("article");
         const image = document.createElement("img");
-        const title = document.createElement("h3");
+        const title = document.createElement("h2");
         const addressContainer = document.createElement("address");
         const websiteLink = document.createElement("a");
         const address = document.createElement("p");
         const phoneNumber = document.createElement("p");
         const titleWrapper = document.createElement("div")
 
+        image.classList.add("company-logo");
         image.setAttribute("src", `images/${item.image}`);
         image.setAttribute("alt", `${item.name}`)
         image.setAttribute("loading", "lazy");
