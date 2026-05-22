@@ -35,6 +35,10 @@ ul {
     list-style-type: none;
 }
 
+address {
+    font-style: normal;
+}
+
 main h1 {
     text-align: center;
 }
@@ -565,10 +569,6 @@ footer {
 
 .member-card:not(:first-child) .image-section img {
     padding-block: 1rem;
-}
-
-.member-card address {
-    font-style: normal;
 }
 
 .member-card address .member-address {
