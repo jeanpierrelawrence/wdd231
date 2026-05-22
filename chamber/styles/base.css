@@ -27,6 +27,10 @@ body {
     background-color: var(--light);
 }
 
+a {
+    color: var(--dark);
+}
+
 ul {
     list-style-type: none;
 }
@@ -521,4 +525,56 @@ footer {
     margin-left: auto;
 }
 
+/*******************************************
+**************** SPOTLIGHT *****************
+*******************************************/
 
+.spotlight {
+    padding: 0 4rem 2rem 4rem;
+}
+
+.spotlight h2 {
+    text-align: center;
+}
+
+.spotlight #spotlight-articles {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+
+.member-card .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+.member-card .image-section {
+    display: grid;
+    place-content: center;
+    background-color: var(--dark);
+}
+
+.member-card:first-child .image-section img {
+    width: 150px;
+    padding-block: 1rem;
+}
+
+.member-card:not(:first-child) .image-section img {
+    padding-block: 1rem;
+}
+
+.member-card address {
+    font-style: normal;
+}
+
+.member-card address .member-address {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.member-card address .member-contact {
+    padding-block: 1rem;
+}

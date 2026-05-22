@@ -20,8 +20,9 @@ function displaySpotlightMembers(members) {
         const article = document.createElement("article");
         article.classList.add("member-card");
 
-        const heading = document.createElement("h2");
+        const heading = document.createElement("h3");
         heading.classList.add("member-name");
+        heading.classList.add("heading-md");
         heading.textContent = member.name;
 
         const image = document.createElement("img");
