@@ -18,11 +18,18 @@ async function apiFetch() {
 }
 
 function parseWeatherObjects(data) {
+    
+    const todayString = new Date().toISOString().split('T')[0];
+
     const middayForecasts = data.list.filter(forecastItem => {
         return forecastItem.dt_txt.includes("12:00:00");
-    })
+    });
 
-    return middayForecasts.slice(0, 4);
+    const futureDaysOnly = middayForecasts.filter(forecastItem => {
+        return !forecastItem.dt_txt.includes(todayString);
+    });
+
+    return futureDaysOnly.slice(0, 3);
 }
 
 function displayForecast(data) {
