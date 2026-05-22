@@ -161,11 +161,26 @@
     }
 
     /*******************************************
-    ************** SPOTLIGHT *************
+    ***************** SPOTLIGHT ****************
     *******************************************/
 
     .spotlight #spotlight-articles {
         align-items: center;
+    }
+
+    /*******************************************
+    ****************** FOOTER *****************
+    *******************************************/
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5rem;
+        align-items: center;
+    }
+
+    footer aside {
+        text-align: center;
     }
 
 }

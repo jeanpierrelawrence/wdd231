@@ -83,6 +83,12 @@ body.nav-open .logo-light { display: block; transition-delay: 0.5s;}
     text-transform: uppercase;
 }
 
+.upper-spaced {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
 .button { 
     padding: 1rem 2rem;
     text-decoration: none;
@@ -352,6 +358,27 @@ footer {
     text-align: center;
 }
 
+footer address strong {
+    letter-spacing: normal;
+    font-weight: 600;
+}
+
+footer nav {
+    padding-block: 2rem;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-socials li a svg {
+    width: 75px;
+    height: auto;
+}
+
 /*******************************************
 **************** HOMEPAGE ******************
 *******************************************/
@@ -425,9 +452,7 @@ footer {
 }
 
 .events .event-card .event-date {
-    text-transform: uppercase;
     font-size: 0.875rem;
-    letter-spacing: 2px;
 }
 
 .events .event-card h3 {
@@ -477,9 +502,6 @@ footer {
 
 .weather-display .weather-display-left h3 {
     font-size: 0.875rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 400;
     padding-top: 0.3rem;
 }
 
@@ -512,10 +534,7 @@ footer {
 }
 
 .weather-display .forecast li h4 {
-    text-transform: uppercase;
     font-size: 0.875rem;
-    font-weight: 300;
-    letter-spacing: 2px;
     color: var(--light-gray);
 }
 
@@ -568,13 +587,25 @@ footer {
 }
 
 .member-card:not(:first-child) .image-section img {
+    max-width: 150px;
     padding-block: 1rem;
 }
 
-.member-card address .member-address {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 .member-card address .member-contact {
     padding-block: 1rem;
+}
+
+.member-card .member-tier {
+    padding: 1rem 2rem;
+    font-family: var(--font-heading);
+    border: 3px solid var(--dark);
+    color: var(--dark);
+    text-transform: uppercase;
+    display: block;
+}
+
+.member-card .member-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

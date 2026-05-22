@@ -4,7 +4,7 @@
       "name": "Bootlegger",
       "address": "42 Caledon Street, Lionviham, Cape Town",
       "phone": "021 203 5178",
-      "website": "https://www.bootlegger.coffee/",
+      "website": "https://www.bootlegger.coffee",
       "image": "bootlegger.avif",
       "membershipLevel": 3,
       "description": "Bootlegger Coffee Company was created in 2012 by 3 best friends, Pieter Bloem, De Waal Basson & Antonie Basson. The brand has now grown into multiple stores all over Cape Town and Johannesburg."
@@ -13,7 +13,7 @@
       "name": "Gridweb",
       "address": "200 Uys Krige Dr, Plattekloof 2, Cape Town",
       "phone": "021 300 1841",
-      "website": "https://gridweb.co.za/",
+      "website": "https://gridweb.co.za",
       "image": "gridweb.avif",
       "membershipLevel": 1,
       "description": "Gridweb is a web design company in Cape Town that develops custom websites focused on growing your brand, expanding your reach, and consistently delivering results."
@@ -40,7 +40,7 @@
       "name": "Roy's Plumbers",
       "address": "3 Bergzicht Rd, Radloff Park, Cape Town, 7130",
       "phone": "060 060 3869",
-      "website": "https://www.somersetweststrandplumbers.co.za/",
+      "website": "https://www.somersetweststrandplumbers.co.za",
       "image": "professional-local-plumber.avif",
       "membershipLevel": 1,
       "description": "We're your local world-class plumbing company that offers quick and high-quality plumbing services in Somerset West, Strand, Gordons Bay and the nearby areas. "

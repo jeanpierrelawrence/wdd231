@@ -11,7 +11,9 @@ async function fetchMembers() {
 
 function displaySpotlightMembers(members) {
 
-    const premiumMembers = members.filter(member => member.membershipLevel === 3)
+    const qualifiedMembers = members.filter(member => member.membershipLevel === 2 || member.membershipLevel === 3);
+    const randomSpotlights = qualifiedMembers.sort(() => 0.5 - Math.random());
+    const premiumMembers = randomSpotlights.slice(0, 2);
 
     articleContainer.innerHTML = "";
 
@@ -24,6 +26,15 @@ function displaySpotlightMembers(members) {
         heading.classList.add("member-name");
         heading.classList.add("heading-md");
         heading.textContent = member.name;
+
+        const tierLabel = document.createElement("p");
+        tierLabel.classList.add("member-tier");
+
+        if (member.membershipLevel === 3) {
+            tierLabel.textContent = "Gold";
+        } else if (member.membershipLevel === 2) {
+            tierLabel.textContent = "Silver";
+        }
 
         const image = document.createElement("img");
         image.setAttribute("src", `images/${member.image}`);
@@ -40,6 +51,7 @@ function displaySpotlightMembers(members) {
 
         const addressLine = document.createElement("p");
         addressLine.classList.add("member-address");
+        addressLine.classList.add("upper-spaced");
         addressLine.textContent = member.address;
         
         const phone = document.createElement("p");
@@ -50,11 +62,15 @@ function displaySpotlightMembers(members) {
         website.setAttribute("href", `${member.website}`);
         website.setAttribute("target", "_blank");
         website.classList.add("member-link");
-        website.textContent = member.website;
+        website.textContent = member.website.replace("https://", "").replace("www.", "");
         
         address.appendChild(addressLine);
         address.appendChild(phone);
-        address.appendChild(website);
+        const linkContainer = document.createElement("div");
+        linkContainer.classList.add("member-info");
+        linkContainer.appendChild(website);
+        linkContainer.appendChild(tierLabel);
+        address.appendChild(linkContainer);
 
         imageWrapper.appendChild(image);
         
