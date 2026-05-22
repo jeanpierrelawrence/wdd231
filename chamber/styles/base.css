@@ -358,9 +358,18 @@ footer {
     text-align: center;
 }
 
+footer address {
+    display: flex;
+    flex-direction: column;
+}
+
 footer address strong {
     letter-spacing: normal;
     font-weight: 600;
+}
+
+footer address a {
+    padding-block: 1rem;
 }
 
 footer nav {
