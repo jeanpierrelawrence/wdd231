@@ -104,6 +104,10 @@ function DisplayCourses(courseList) {
             li.classList.add('incomplete')
         }
 
+        li.addEventListener("click", () => {
+            displayModal(course);
+        });
+
         courseCont.appendChild(li);
 
     });
@@ -122,3 +126,24 @@ wddBtn.addEventListener("click", () => {
     const wddCourses = courses.filter(course => course.subject === "WDD");
     DisplayCourses(wddCourses);
 });
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayModal(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology?.join(', ') || 'None specified'}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModalBtn = document.querySelector("#closeModal");
+    closeModalBtn.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
