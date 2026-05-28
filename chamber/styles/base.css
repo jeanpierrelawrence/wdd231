@@ -736,6 +736,11 @@ footer nav {
 ****************** DIALOG ******************
 *******************************************/
 
+body.modal-open {
+    overflow: hidden;
+    height: 100vh;
+}
+
 .modal-card header {
     display: block;
     padding: 0;
@@ -820,7 +825,7 @@ footer nav {
 
 .benefits-list .icon-tick {
     padding: 0.5rem;
-
+    margin-right: 0.5rem;
     border-radius: 50%;
     background-color: var(--dark);
     color: var(--light);
