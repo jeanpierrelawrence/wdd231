@@ -84,27 +84,27 @@
 
             <ul class="membership-cards">
                 <li class="card">
-                    <h3>Non-Profit Membership</h3>
+                    <h3 class="heading-md">Non-Profit Membership</h3>
                     <p>Basic tier for non-profit organizations.</p>
-                    <button type="button" class="open-modal-btn" data-modal="modal-np">View Benefits</button>
+                    <button type="button" class="open-modal-btn heading-sm" data-modal="modal-np">View Benefits</button>
                 </li>
 
                 <li class="card">
-                    <h3>Bronze Membership</h3>
+                    <h3 class="heading-md">Bronze Membership</h3>
                     <p>Entry-level corporate tier.</p>
-                    <button type="button" class="open-modal-btn" data-modal="modal-bronze">View Benefits</button>
+                    <button type="button" class="open-modal-btn heading-sm" data-modal="modal-bronze">View Benefits</button>
                 </li>
 
                 <li class="card">
-                    <h3>Silver Membership</h3>
+                    <h3 class="heading-md">Silver Membership</h3>
                     <p>Increased visibility and features.</p>
-                    <button type="button" class="open-modal-btn" data-modal="modal-silver">View Benefits</button>
+                    <button type="button" class="open-modal-btn heading-sm" data-modal="modal-silver">View Benefits</button>
                 </li>
 
                 <li class="card">
-                    <h3>Gold Membership</h3>
+                    <h3 class="heading-md">Gold Membership</h3>
                     <p>Premium tier with maximum advertising slots.</p>
-                    <button type="button" class="open-modal-btn" data-modal="modal-gold">View Benefits</button>
+                    <button type="button" class="open-modal-btn heading-sm" data-modal="modal-gold">View Benefits</button>
                 </li>
             </ul>
         </div>
@@ -147,20 +147,19 @@
         </aside>
     </footer>
 
-    <dialog id="modal-np">
+    <dialog id="modal-np" class="modal">
         <div class="modal-card">
             <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
             
             <header class="modal-header">
-                <span class="category-title">Membership</span>
-                <h2>NP Membership</h2>
+                <span class="category-title upper-spaced">Membership</span>
+                <h2 class="heading-md">NP Membership</h2>
                 
                 <div class="price-block">
-                    <span class="currency-symbol">R</span>
-                    <span class="price-amount">0</span>
+                    <span class="price-amount">R0</span>
                     <div class="billing-info">
-                        <span>per year</span>
-                        <span>no fee</span>
+                        <span>No fees</span>
+                        <span>Basic</span>
                     </div>
                 </div>
             </header>
@@ -183,25 +182,24 @@
             </main>
 
             <footer class="modal-footer">
-                <a href="membership-details.html" class="learn-more-link">Learn More</a>
+                <a href="#" class="learn-more-link button heading-sm">Learn More</a>
             </footer>
         </div>
     </dialog>
 
-    <dialog id="modal-bronze">
+    <dialog id="modal-bronze" class="modal">
         <div class="modal-card">
             <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
             
             <header class="modal-header">
-                <span class="category-title">Membership</span>
-                <h2>Bronze Tier</h2>
+                <span class="category-title upper-spaced">Membership</span>
+                <h2 class="heading-md">Bronze Tier</h2>
                 
                 <div class="price-block">
-                    <span class="currency-symbol">R</span>
-                    <span class="price-amount">1,500</span>
+                    <span class="price-amount">R1,500</span>
                     <div class="billing-info">
-                        <span>per year</span>
-                        <span>billed annually</span>
+                        <span>Billed annually</span>
+                        <span>R129 per month</span>
                     </div>
                 </div>
             </header>
@@ -228,25 +226,24 @@
             </main>
 
             <footer class="modal-footer">
-                <a href="membership-details.html" class="learn-more-link">Learn More</a>
+                <a href="#" class="learn-more-link button">Learn More</a>
             </footer>
         </div>
     </dialog>
 
-    <dialog id="modal-silver">
+    <dialog id="modal-silver" class="modal">
         <div class="modal-card">
             <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
             
             <header class="modal-header">
-                <span class="category-title">Membership</span>
-                <h2>Silver Tier</h2>
+                <span class="category-title upper-spaced">Membership</span>
+                <h2 class="heading-md">Silver Tier</h2>
                 
                 <div class="price-block">
-                    <span class="currency-symbol">R</span>
-                    <span class="price-amount">3,500</span>
+                    <span class="price-amount">R3,500</span>
                     <div class="billing-info">
-                        <span>per year</span>
-                        <span>billed annually</span>
+                        <span>Billed annually</span>
+                        <span>R299 per month</span>
                     </div>
                 </div>
             </header>
@@ -277,25 +274,24 @@
             </main>
 
             <footer class="modal-footer">
-                <a href="membership-details.html" class="learn-more-link">Learn More</a>
+                <a href="#" class="learn-more-link button">Learn More</a>
             </footer>
         </div>
     </dialog>
 
-    <dialog id="modal-gold">
+    <dialog id="modal-gold" class="modal">
         <div class="modal-card">
             <button type="button" class="close-modal-btn" aria-label="Close modal">&times;</button>
             
             <header class="modal-header">
-                <span class="category-title">Membership</span>
-                <h2>Gold Tier</h2>
+                <span class="category-title upper-spaced">Membership</span>
+                <h2 class="heading-md">Gold Tier</h2>
                 
                 <div class="price-block">
-                    <span class="currency-symbol">R</span>
-                    <span class="price-amount">7,000</span>
+                    <span class="price-amount">R7,000</span>
                     <div class="billing-info">
-                        <span>per year</span>
-                        <span>billed annually</span>
+                        <span>Billed annually</span>
+                        <span>R599 per month</span>
                     </div>
                 </div>
             </header>
@@ -330,7 +326,7 @@
             </main>
 
             <footer class="modal-footer">
-                <a href="membership-details.html" class="learn-more-link">Learn More</a>
+                <a href="#" class="learn-more-link button">Learn More</a>
             </footer>
         </div>
     </dialog>
