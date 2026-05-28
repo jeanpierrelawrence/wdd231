@@ -4,6 +4,7 @@
     --accent: #00DE00;
     --light-gray: #7e7e7e;
     --dark-gray: #2e2e2e;
+    --light-line: #e4ddc8;
 
     --font-heading: 'Anton', Arial, sans-serif;
     --font-body: 'Arimo', Arial, sans-serif;
@@ -41,6 +42,14 @@ address {
 
 main h1 {
     text-align: center;
+}
+
+form label, 
+form input, 
+form select, 
+form textarea {
+    display: block;
+    width: 100%;
 }
 
 /*******************************************
@@ -87,12 +96,14 @@ body.nav-open .logo-light { display: block; transition-delay: 0.5s;}
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
+    font-size: 0.875rem;
 }
 
 .button { 
     padding: 1rem 2rem;
     text-decoration: none;
     transition: var(--transition-bezier);
+    border: none;
 }
 
 /*******************************************
@@ -457,7 +468,7 @@ footer nav {
     left: 0;
     width: 100%;
     height: 1px;
-    background: hsl(44, 35%, 84%)
+    background: var(--light-line);
 }
 
 .events .event-card .event-date {
@@ -618,3 +629,75 @@ footer nav {
     align-items: center;
     justify-content: space-between;
 }
+
+/*******************************************
+**************** JOIN PAGE *****************
+*******************************************/
+/*******************************************
+****************** FORM ********************
+*******************************************/
+
+.member-form {
+    padding: 2rem 4rem;
+}
+
+.member-form label {
+    padding-block: 2rem 0.5rem;
+}
+
+.member-form input, 
+.member-form select, 
+.member-form textarea {
+    background-color: transparent;
+    border: none;                     
+    border-bottom: 2px solid var(--light-line);    
+    border-radius: 0;                 
+    padding: 0.5rem 0;                
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.member-form select {
+    background: var(--light);
+}
+
+.member-form select option {
+    padding-block: 1rem;
+}
+
+.member-form textarea {
+    resize: vertical;
+}
+
+.member-form input:focus, 
+.member-form select:focus,
+.member-form textarea:focus {
+    outline: none; 
+    border-bottom: 2px solid var(--dark);
+}
+
+.member-form button {
+    display: block;
+    margin-inline: auto;
+    margin-top: 2rem;
+    background-color: var(--light-line);
+    white-space: nowrap;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.member-form button:hover {
+    background-color: var(--dark);
+    color: var(--light-line);
+}
+
+/*******************************************
+************* MEMBERSHIP CARDS *************
+*******************************************/
+
+/*******************************************
+****************** DIALOG ******************
+*******************************************/
