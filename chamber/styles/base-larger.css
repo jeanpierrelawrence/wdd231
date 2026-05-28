@@ -183,6 +183,10 @@
         text-align: center;
     }
 
+    .membership-cards .card {
+        padding: 2rem;
+    }
+
 }
 
 @media only screen and (min-width: 75.625rem) {
@@ -250,5 +254,39 @@
 
     .member-card h3 {
         text-align: center;
+    }
+
+    /*******************************************
+    ******************* JOIN *******************
+    *******************************************/
+    /*******************************************
+    ***************** WRAPPER ****************
+    *******************************************/
+
+    .join-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 3rem 5rem;
+    }
+
+    .price-block {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .modal {
+        width: 40vw;
+    }
+
+    .price-block .price-amount {
+        font-size: 4rem;
+    }
+
+    .modal-card footer {
+        display: block;
+        padding: 0;
     }
 }
