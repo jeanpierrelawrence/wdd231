@@ -844,3 +844,44 @@ body.modal-open {
 .tier-description {
     padding-block: 2rem;
 }
+
+/*******************************************
+************** THANKYOU CARDS **************
+*******************************************/
+
+.thankyou-card {
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.thankyou-card > P {
+    padding: 2rem;
+}
+
+.thankyou-card .card-details-grid {
+    background-color: var(--light-line);
+    text-align: left;
+    padding: 2rem 3rem;
+}
+
+.thankyou-card .card-details-grid p {
+    font-weight: 600;
+    line-height: 2;
+}
+
+.thankyou-card .card-details-grid h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.return-home-btn {
+    background-color: var(--accent);
+    color: var(--dark);
+    display: inline-block;
+    margin-top: 2rem;
+    transition: 0.1s ease-in;
+}
+
+.return-home-btn:hover {
+    background-color: hsl(120, 100%, 46%);
+}
