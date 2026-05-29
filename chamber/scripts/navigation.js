@@ -8,13 +8,12 @@ menuBtn.addEventListener("click", () => {
     menuBtn.setAttribute("aria-expanded", isOpen);
 })
 
-navLinks.forEach(link => {
-    link.addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", () => {
+    
+    navLinks.forEach(link => {
 
-        navLinks.forEach(l => l.classList.remove("active"));
-
-        this.classList.add("active");
-
-        document.body.classList.remove("nav-open");
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
     });
 });

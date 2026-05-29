@@ -96,6 +96,10 @@
         transition-delay: 0s;
     }
 
+    .primary-nav ul li a.active::before {
+        transform: scaleX(1);
+    }
+
     .primary-nav ul li a {
         color: var(--dark);
         font-size: 1.5rem;
