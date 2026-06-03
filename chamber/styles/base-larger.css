@@ -210,6 +210,7 @@
     #places {
         padding: 2rem 4rem;
         text-align: left;
+        min-height: 80vh;
     }
 
     #places .place-card {

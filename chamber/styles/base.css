@@ -933,7 +933,7 @@ body.modal-open {
     text-align: center;
     display: grid;
     gap: 1rem;
-    min-height: 80vh;
+    min-height: 120vh;
 }
 
 #places .place-card {
@@ -984,7 +984,7 @@ body.modal-open {
 
 .visit-toast {
     position: fixed;
-    top: 2rem;
+    top: 1rem;
     left: 50%;
     z-index: 9999; 
     background-color: var(--accent);
@@ -993,8 +993,8 @@ body.modal-open {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
     opacity: 0;
-    transform: translate(-50%, 20px) scale(0.98);
-    
+    transform: translate(-50%, 10px) scale(0.98);
+    contain: layout style;
     transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
                 transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     pointer-events: none;
