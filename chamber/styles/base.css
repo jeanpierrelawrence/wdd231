@@ -958,11 +958,11 @@ body.modal-open {
     background-color: var(--dark);
     color: var(--light);
     transition: 0.2s ease-in;
+}
 
-    &:hover {
-        background-color: #00DE00;
-        color: var(--dark);
-    }
+#places .place-card a:hover {
+    background-color: #00DE00;
+    color: var(--dark);
 }
 
 /*******************************************

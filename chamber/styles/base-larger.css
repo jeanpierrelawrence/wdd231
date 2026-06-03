@@ -226,10 +226,10 @@
     #places .place-card img {
         filter: grayscale(1);
         transition: 0.2s ease-in;
+    }
 
-        &:hover {
-            filter: none;
-        }
+    #places .place-card img:hover {
+        filter: none;
     }
 
 }
