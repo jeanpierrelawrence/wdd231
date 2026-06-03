@@ -63,9 +63,9 @@ form textarea {
 *******************************************/
 
 .logo {
-    max-width: 100%;
+    width: 78px;
     height: auto;
-    aspect-ratio: attr(width) / attr(height);
+    display: block;
 }
 
 .logo-light { display: none; }
