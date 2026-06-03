@@ -40,6 +40,12 @@ address {
     font-style: normal;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height); 
+}
+
 main h1 {
     text-align: center;
 }
@@ -55,6 +61,12 @@ form textarea {
 /*******************************************
 **************** UTILITIES *****************
 *******************************************/
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}
 
 .logo-light { display: none; }
 
@@ -921,6 +933,7 @@ body.modal-open {
     text-align: center;
     display: grid;
     gap: 1rem;
+    min-height: 80vh;
 }
 
 #places .place-card {
