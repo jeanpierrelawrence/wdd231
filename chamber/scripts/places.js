@@ -12,7 +12,7 @@ function displayPlaces(data) {
     data.forEach(item => {
         
         const card = document.createElement("article");
-        card.classList.add("card");
+        card.classList.add("place-card");
 
         const image = document.createElement("img");
         image.setAttribute("src", `${item.image_url}`);
@@ -22,20 +22,29 @@ function displayPlaces(data) {
         image.setAttribute("height", "200");
 
         const title = document.createElement("h2");
+        title.classList.add("heading-md");
         title.textContent = item.name;
 
         const address = document.createElement("p");
         address.classList.add("address-label");
+        address.classList.add("upper-spaced");
         address.textContent = item.address;
 
         const description = document.createElement("p");
         description.classList.add("place-description");
         description.textContent = item.description;
 
+        const button = document.createElement("a");
+        button.setAttribute("href", "#");
+        button.classList.add("button");
+        button.classList.add("heading-sm");
+        button.textContent = "Learn More";
+
         card.appendChild(title);
         card.appendChild(image);
         card.appendChild(description);
         card.appendChild(address);
+        card.appendChild(button);
 
         container.appendChild(card);
 

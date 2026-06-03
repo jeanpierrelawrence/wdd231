@@ -200,6 +200,38 @@
         margin-inline: auto;
     }
 
+    /*******************************************
+    ***************** DISCOVER *****************
+    *******************************************/
+    /*******************************************
+    ****************** CARDS *******************
+    *******************************************/
+
+    #places {
+        padding: 2rem 4rem;
+        text-align: left;
+    }
+
+    #places .place-card {
+        padding-block: 3rem;
+        grid-template-areas:
+        "image title"
+        "image description"
+        "image address"
+        ". button";
+        gap: 1.5rem;
+        place-items: start;
+    }
+
+    #places .place-card img {
+        filter: grayscale(1);
+        transition: 0.2s ease-in;
+
+        &:hover {
+            filter: none;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 75.625rem) {
@@ -301,5 +333,30 @@
     .modal-card footer {
         display: block;
         padding: 0;
+    }
+
+    /*******************************************
+    ***************** DISCOVER *****************
+    *******************************************/
+    /*******************************************
+    ****************** CARDS *******************
+    *******************************************/
+
+    #places {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    #places .place-card {
+        padding-block: 3rem;
+        grid-template-areas:
+        "image title"
+        "image description"
+        "image address"
+        ". button";
+        gap: 1.5rem;
+        place-items: start;
     }
 }

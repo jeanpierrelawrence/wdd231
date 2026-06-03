@@ -917,5 +917,77 @@ body.modal-open {
 *******************************************/
 
 #places {
-    padding: 2rem 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+#places .place-card {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-areas:
+    "title"
+    "image"
+    "description"
+    "address"
+    "button";
+    gap: 1.25rem;
+    place-items: center;
+    border: 1px solid var(--light-line);
+}
+
+#places .place-card h2 {
+    grid-area: title;
+}
+
+#places .place-card img {
+    grid-area: image;
+}
+
+#places .place-card .address-label {
+    grid-area: address;
+}
+
+#places .place-card .place-description {
+    grid-area: description;
+}
+
+#places .place-card a {
+    grid-area: button;
+    background-color: var(--dark);
+    color: var(--light);
+    transition: 0.2s ease-in;
+
+    &:hover {
+        background-color: #00DE00;
+        color: var(--dark);
+    }
+}
+
+/*******************************************
+*************** NOTIFICATION ***************
+*******************************************/
+
+.visit-toast {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    z-index: 9999; 
+    background-color: var(--accent);
+    color: var(--dark);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, 20px) scale(0.98);
+    
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    pointer-events: none;
+}
+
+.visit-toast.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
 }
