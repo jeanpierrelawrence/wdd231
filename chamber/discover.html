@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Somerset West Chamber of Commerce</title>
-    <meta name="description" content="Official platform for the Somerset West Chamber of Commerce. Access regional business spotlights, current weather data, and upcoming events.">
+    <title>Member Directory | Somerset West Chamber of Commerce</title>
+    <meta name="description" content="Explore the business directory for the Somerset West Chamber of Commerce. Discover local businesses, services, and partners in the Helderberg area.">
     <meta name="author" content="Jp Lawrence">
 
-    <meta property="og:title" content="Official Homepage - Somerset West Chamber of Commerce" >
-    <meta property="og:description" content="Connecting community across the Helderberg basin. View business spotlights, current weather info, and upcoming chamber events." >
-    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/chamber/index.html" >
-    <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/chamber/images/og-image.avif" >
+    <meta property="og:title" content="Member Directory - Somerset West Chamber of Commerce" />
+    <meta property="og:description" content="Connecting you with top-rated local businesses in Somerset West. Support our community by browsing our official member directory." />
+    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/chamber/images/og-image.avif" />
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/avif">
@@ -26,8 +26,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/places.js" type="module" defer></script>
 
 </head>
 <body>
@@ -46,92 +45,15 @@
         <nav id="primary-nav" class="primary-nav">
             <ul>
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="discover.html" class="nav-link">Discover</a></li>
+                <li><a href="#" class="nav-link">Discover</a></li>
                 <li><a href="directory.html" class="nav-link">Directory</a></li>
                 <li><a href="join.html" class="nav-link">Join</a></li>
             </ul>
         </nav>
     </div>
     <main>
-        <section class="hero">
-            <h1 class="heading-lg">Somerset West</h1>
-            <a href="join.html" class="hero-cta button heading-sm">Join</a>
-        </section>
-        <div class="events-weather-wrapper">
-            <section class="events">
-                <h2 class="heading-lg rotate-text-270">Events</h2>
-                <ul class="event-card-wrapper">
-                    <li>
-                        <article class="event-card">
-                            <time datetime="2026-05-28T09:00" class="event-date upper-spaced">
-                            28 May 2026 // 09:00
-                            </time>
-                            <h3 class="heading-sm">Helderberg B2B Expo & Networking</h3>
-                            <p class="event-location">Venue: Lord Charles Hotel</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="event-card">
-                            <time datetime="2026-06-11T14:30" class="event-date upper-spaced">
-                            11 June 2026 // 14:30
-                            </time>
-                            <h3 class="heading-sm">Agro-Processing Roundtable</h3>
-                            <p class="event-location">Venue: Vergelegen Estate</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="event-card">
-                            <time datetime="2026-06-25T18:30" class="event-date upper-spaced">
-                            25 Jun 2026 // 18:30
-                            </time>
-                            <h3 class="heading-sm">Mid-Year Economic Outlook</h3>
-                            <p class="event-location">Venue: Sitari Suite</p>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-            <section class="weather" aria-labelledby="weather-heading">
-                <h2 class="weather-heading heading-lg rotate-text-270">Weather</h2>
-                <article class="weather-display">
-                    <div class="today">
-                        <div class="weather-display-left">
-                            <div class="temp-wrapper">
-                                <span class="weather-temp" id="temperature"></span>
-                                <span id="sky"></span>
-                            </div>
-                            <p id="temp-details"></p>
-                            <h3 class="upper-spaced">Somerset West</h3>
-                        </div>
-                        <div class="weather-display-right">
-                            <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Weather">
-                            <span id="wind"></span>
-                        </div>
-                    </div>
-                    <ul class="forecast">
-                        <li>
-                            <h4 id="forecast-day-2-name" class="upper-spaced">Loading...</h4>
-                            <span id="forecast-day2-temp" class="temp"></span>
-                            <img alt="Weather" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="forecast-day2">
-                        </li>
-                        <li>
-                            <h4 id="forecast-day-3-name" class="upper-spaced">Loading...</h4>
-                            <span id="forecast-day3-temp" class="temp"></span>
-                            <img alt="Weather" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="forecast-day3">
-                        </li>
-                        <li>
-                            <h4 id="forecast-day-4-name" class="upper-spaced">Loading...</h4>
-                            <span id="forecast-day4-temp" class="temp"></span>
-                            <img alt="Weather" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="forecast-day4">
-                        </li>
-                    </ul>
-                </article>
-            </section>
-        </div>
-        <section class="spotlight">
-            <h2 class="heading-lg">Member Spotlight</h2>
-            <div id="spotlight-articles">
-
-            </div>
+        <h1 class="heading-lg">Discover</h1>
+        <section id="places">
         </section>
     </main>
     <footer>
@@ -167,7 +89,6 @@
             <p class="heading-sm">&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
             <p id="lastModified" class="heading-sm"></p>
         </aside>
-        
     </footer>
 
 </body>
