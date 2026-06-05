@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive, motion-driven educational platform designed to demystify human biology and complex physiological systems through character-driven hormone profiles.">
+    <meta name="author" content="Jp Lawrence">
+    <meta property="og:title" content="Bodinode — Interactive Biology Engine"/>
+    <meta property="og:description" content="Explore the secret world of hormones! Meet the characters regulating your metabolism, sleep, and development through dynamic, micro-learning biology profiles." />
+    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/finalproject/index.html" />
+    <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/finalproject/images/og-image.avif" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/avif">
+    <title>Home — Bodinode</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1><img src="images/bodinode-logo.svg" alt="Bodinode"></h1>
+        <button id="menu-button" class="menu-button" aria-label="Open Menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="body-simulator.html">Body Simulator</a></li>
+                <li><a href="lab-history.html">Lab History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="images/hero.svg" alt="Bodinode Hero">
+            <h1 class="inline-heading">Meet the squad that runs your body.</h1>
+            <p class="inline-paragraph">
+                Inside you is a team of tiny, colorful messengers called hormones! They are like your body's personal text messages, telling your heart when to beat, your tummy when it's full, and your brain when it's time to sleep. Use our interactive map to discover all 15 characters, or hop into the Body State Simulator to test how your choices change your inner world!
+            </p>
+            <a href="#hormones">Continue <img src="images/arrow.svg" alt="Arrow Down"></a>
+        </section>
+        <section id="body">
+            <object 
+                id="interactiveBody" 
+                type="image/svg+xml" 
+                data="images/human-body.svg">
+            </object>
+            <button class="pill-popup">Hormone A</button>
+            <button class="pill-popup">Hormone B</button>
+            <button class="pill-popup">Hormone C</button>
+            <button class="pill-popup">Hormone A</button>
+            <button class="pill-popup">Hormone B</button>
+            <button class="pill-popup">Hormone C</button>
+            <button class="pill-popup">Hormone A</button>
+            <button class="pill-popup">Hormone B</button>
+            <button class="pill-popup">Hormone C</button>
+            <button class="pill-popup">Hormone A</button>
+            <button class="pill-popup">Hormone B</button>
+            <button class="pill-popup">Hormone C</button>
+            <button class="pill-popup">Hormone A</button>
+            <button class="pill-popup">Hormone B</button>
+            <button class="pill-popup">Hormone C</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="scripts/main.mjs" type="module"></script>
+</body>
+</html>
