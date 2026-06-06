@@ -46,26 +46,38 @@
                 type="image/svg+xml" 
                 data="images/human-body.svg">
             </object>
-            <button class="pill-popup">Hormone A</button>
-            <button class="pill-popup">Hormone B</button>
-            <button class="pill-popup">Hormone C</button>
-            <button class="pill-popup">Hormone A</button>
-            <button class="pill-popup">Hormone B</button>
-            <button class="pill-popup">Hormone C</button>
-            <button class="pill-popup">Hormone A</button>
-            <button class="pill-popup">Hormone B</button>
-            <button class="pill-popup">Hormone C</button>
-            <button class="pill-popup">Hormone A</button>
-            <button class="pill-popup">Hormone B</button>
-            <button class="pill-popup">Hormone C</button>
-            <button class="pill-popup">Hormone A</button>
-            <button class="pill-popup">Hormone B</button>
-            <button class="pill-popup">Hormone C</button>
+            <div class="pill-carousel">
+                <div class="pill-group">
+                    <button class="pill-popup" data-hormone="endorphins">Endorphins</button>
+                    <button class="pill-popup" data-hormone="insulin">Insulin</button>
+                    <button class="pill-popup" data-hormone="cortisol">Cortisol</button>
+                </div>
+                <div class="pill-group">
+                    <button class="pill-popup" data-hormone="adrenaline">Adrenaline</button>
+                    <button class="pill-popup" data-hormone="melatonin">Melatonin</button>
+                    <button class="pill-popup" data-hormone="oxytocin">Oxytocin</button>
+                </div>
+                <div class="pill-group">
+                    <button class="pill-popup" data-hormone="dopamine">Dopamine</button>
+                    <button class="pill-popup" data-hormone="seratonin">Seratonin</button>
+                    <button class="pill-popup" data-hormone="glucagon">Glucagon</button>
+                </div>
+                <div class="pill-group">
+                    <button class="pill-popup" data-hormone="thyroxin">Thyroxin</button>
+                    <button class="pill-popup" data-hormone="growth">Growth-Hormone</button>
+                    <button class="pill-popup" data-hormone="leptin">Leptin</button>
+                </div>
+                <div class="pill-group">
+                    <button class="pill-popup" data-hormone="ghrelin">Ghrelin</button>
+                    <button class="pill-popup" data-hormone="estrogen">Estrogen</button>
+                    <button class="pill-popup" data-hormone="testosterone">Testosterone</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
     <dialog>
-        <div class="modal-content">
+        <div class="modal-content" id="modal-content">
             <button class="modal-close" aria-label="Close modal">
                 <svg width="61" height="61" viewBox="0 0 61 61" fill="none">
                     <path class="close-line" d="M45.75 15.25L15.25 45.75" stroke="#959AE4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -77,56 +89,56 @@
                 
                 <div class="modal-text-zone">
                 
-                <header class="profile-header">
-                    <span class="meta-category">Identity</span>
-                    <div class="title-row">
-                    <h2 id="modal-title">Leptin</h2>
-                    <button class="bookmark-btn" aria-label="Bookmark Leptin">
-                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-                            <path d="M8.66675 19.5C8.66675 13.3717 8.66675 10.3076 10.5706 8.40381C12.4744 6.5 15.5385 6.5 21.6667 6.5H30.3334C36.4617 6.5 39.5258 6.5 41.4296 8.40381C43.3334 10.3076 43.3334 13.3717 43.3334 19.5V34.2932C43.3334 40.1069 43.3334 43.0138 41.5041 43.9029C39.6748 44.792 37.3891 42.9961 32.8176 39.4042L31.3545 38.2547C28.7841 36.235 27.4988 35.2252 26.0001 35.2252C24.5013 35.2252 23.2161 36.235 20.6456 38.2547L19.1826 39.4042C14.6111 42.9961 12.3254 44.792 10.4961 43.9029C8.66675 43.0138 8.66675 40.1069 8.66675 34.2932V19.5Z" stroke="#221B1B" stroke-width="5"/>
-                            </svg>
-                    </button>
-                    </div>
-                    <span class="badge">Metabolism</span>
-                </header>
+                    <header class="profile-header">
+                        <span class="meta-category">Identity</span>
+                        <div class="title-row">
+                        <h2 id="modal-title">Leptin</h2>
+                        <button class="bookmark-btn" aria-label="Bookmark Leptin">
+                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path d="M8.66675 19.5C8.66675 13.3717 8.66675 10.3076 10.5706 8.40381C12.4744 6.5 15.5385 6.5 21.6667 6.5H30.3334C36.4617 6.5 39.5258 6.5 41.4296 8.40381C43.3334 10.3076 43.3334 13.3717 43.3334 19.5V34.2932C43.3334 40.1069 43.3334 43.0138 41.5041 43.9029C39.6748 44.792 37.3891 42.9961 32.8176 39.4042L31.3545 38.2547C28.7841 36.235 27.4988 35.2252 26.0001 35.2252C24.5013 35.2252 23.2161 36.235 20.6456 38.2547L19.1826 39.4042C14.6111 42.9961 12.3254 44.792 10.4961 43.9029C8.66675 43.0138 8.66675 40.1069 8.66675 34.2932V19.5Z" stroke="#221B1B" stroke-width="5"/>
+                                </svg>
+                        </button>
+                        </div>
+                        <span class="badge">Metabolism</span>
+                    </header>
 
-                <section class="profile-section" aria-labelledby="stats-heading">
-                    <span class="meta-category" id="stats-heading">Vital Stats</span>
-                    
-                    <div class="stat-block">
-                    <h3>Where Am I Born?</h3>
-                    <p>Fat cells.</p>
-                    </div>
-                    
-                    <div class="stat-block">
-                    <h3>Where Do I Travel To?</h3>
-                    <p>I travel all the way to your brain.</p>
-                    </div>
-                    
-                    <div class="stat-block">
-                    <h3>When Do I Wake Up?</h3>
-                    <p>When you eat a hearty meal, your body tells me to start working!</p>
-                    </div>
-                </section>
+                    <section class="profile-section" aria-labelledby="stats-heading">
+                        <span class="meta-category" id="stats-heading">Vital Stats</span>
+                        
+                        <div class="stat-block">
+                        <h3>Where Am I Born?</h3>
+                        <p id="born">Fat cells.</p>
+                        </div>
+                        
+                        <div class="stat-block">
+                        <h3>Where Do I Travel To?</h3>
+                        <p id="travel">I travel all the way to your brain.</p>
+                        </div>
+                        
+                        <div class="stat-block">
+                        <h3>When Do I Wake Up?</h3>
+                        <p id="wakeup">When you eat a hearty meal, your body tells me to start working!</p>
+                        </div>
+                    </section>
 
-                <section class="profile-section" aria-labelledby="function-heading">
-                    <span class="badge" id="function-heading">Function</span>
-                    <h3>What Is My Job?</h3>
-                    <p>Leptin is your body's energy referee! It flies up to your brain to deliver a message saying you are totally full, happy, and ready to stop eating.</p>
-                </section>
+                    <section class="profile-section" aria-labelledby="function-heading">
+                        <span class="pill badge" id="function-heading">Function</span>
+                        <h3>What Is My Job?</h3>
+                        <p id="job">Leptin is your body's energy referee! It flies up to your brain to deliver a message saying you are totally full, happy, and ready to stop eating.</p>
+                    </section>
 
-                <section class="profile-section glitch-panel" aria-labelledby="glitches-heading">
-                    <span class="meta-category" id="glitches-heading">System Glitches</span>
-                    <h3>What Happens If I Don't Work Properly?</h3>
-                    
-                    <p>If there is <strong>too little Leptin</strong>, your brain never gets the "I'm full!" message, making you feel constantly starving even after a huge dinner.</p>
-                    <p>If there is <strong>too much Leptin</strong> floating around for too long, your brain gets overwhelmed...</p>
-                </section>
+                    <section class="profile-section glitch-panel" aria-labelledby="glitches-heading" >
+                        <span class="meta-category" id="glitches-heading">System Glitches</span>
+                        <h3>What Happens If I Don't Work Properly?</h3>
+                        
+                        <p id="low">If there is <strong>too little Leptin</strong>, your brain never gets the "I'm full!" message, making you feel constantly starving even after a huge dinner.</p>
+                        <p id="high">If there is <strong>too much Leptin</strong> floating around for too long, your brain gets overwhelmed...</p>
+                    </section>
 
                 </div>
                 
                 <div class="modal-image-zone">
-                    <img src="images/characters/leptin.avif" alt="Plush 3D Leptin character mascot wearing a blue sweater labeled 'Leptin satiety signal'">
+                    <img src="#" alt="None" width="1500" height="1500" id="modal-img">
                 </div>
 
             </div>
