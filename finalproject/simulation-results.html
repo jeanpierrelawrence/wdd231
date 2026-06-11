@@ -7,12 +7,12 @@
     <meta name="author" content="Jp Lawrence">
     <meta property="og:title" content="Bodinode — Interactive Biology Engine"/>
     <meta property="og:description" content="Explore the secret world of hormones! Meet the characters regulating your metabolism, sleep, and development through dynamic, micro-learning biology profiles." />
-    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/finalproject/lab-history.html" />
+    <meta property="og:url" content="https://jeanpierrelawrence.github.io/wdd231/finalproject/simulation-results.html" />
     <meta property="og:image" content="https://jeanpierrelawrence.github.io/wdd231/finalproject/images/og-image.avif" />
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/avif">
-    <title>Lab History — Bodinode</title>
+    <title>Body Simulator — Bodinode</title>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -31,13 +31,29 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Lab History</h1>
-        <p>Here are all the hormones you saved. Think of this more like your hormone sticker wall.</p>
-        <ul id="lab-history-grid">
-        </ul>
+    <main class="simulator-results-container">
+        <header class="scenario-header">
+            <h1 id="scenario-title">...</h1>
+            <p id="scenario-summary">...</p>
+        </header>
+
+        <div class="results-display-matrix">
+            <div id="hormone-cards-grid" class="cards-grid">
+            </div>
+        </div>
+
+        <a href="body-simulator.html">Go Back <img src="./images/arrow.svg" alt="Arrow"></a>
+
+        <template id="hormone-card-template">
+            <article class="hormone-status-card" data-layout="">
+                <h3 class="hormone-name"></h3>
+                <img class="hormone-avatar" src="" alt="">
+                <span class="status-badge"></span>
+                <p class="scenario-description"></p>
+            </article>
+        </template>
     </main>
     <footer></footer>
-    <script src="scripts/main.mjs" type="module"></script>
+    <script type="module" src="./scripts/main.mjs"></script>
 </body>
 </html>

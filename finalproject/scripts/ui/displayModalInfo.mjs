@@ -15,6 +15,15 @@ const nodes = {
 
 export function displayModalInfo(character) {
 
+    const saveButton = document.querySelector("#bookmark-btn");
+
+    const newSaveBtn = saveButton.cloneNode(true);
+    saveButton.parentNode.replaceChild(newSaveBtn, saveButton);
+
+    newSaveBtn.addEventListener("click", () => {
+        saveHormone(character.title, character.image, character.themeColors.main);
+    });
+
     if (!character || !character.themeColors || !character.stats || !character.glitches) {
         console.error("Invalid character data payload provided to displayModalInfo.");
         return;
@@ -40,4 +49,23 @@ export function displayModalInfo(character) {
 
     nodes.image.src = character.image;
     nodes.image.alt = character.altText;
+}
+
+function saveHormone(name, imageUrl, themeColor) {
+    const history = JSON.parse(localStorage.getItem("labHistory")) || [];
+
+    const alreadySaved = history.some(item => item.name === name);
+    if (alreadySaved) {
+        console.log(`${name} is already saved in lab history.`);
+        return;
+    }
+
+    history.push({
+        name: name,
+        image: imageUrl,
+        backgroundColor: themeColor
+    });
+
+    localStorage.setItem("labHistory", JSON.stringify(history));
+    window.alert(`${name} successfully bookmarked.`);
 }

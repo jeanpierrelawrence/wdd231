@@ -199,6 +199,106 @@
       },
       "image": "./images/characters/thyroxin.avif",
       "altText": "Plush 3D Thyroxin character"
+    },
+    "growth": {
+      "title": "Growth Hormone",
+      "badge": "Growth & Repair",
+      "themeColors": {
+        "main": "hsl(216, 60%, 84%)",
+        "darker": "hsl(216, 60%, 74%)"
+      },
+      "stats": {
+        "born": "Your pituitary gland, a tiny organ at the base of your brain.",
+        "travel": "I travel through your bloodstream to find your bones, muscles, and organs.",
+        "wakeup": "I wake up in big bursts during deep nighttime sleep and right after intense exercise."
+      },
+      "job": "Growth Hormone is your body's master builder! While you rest, I tell your bones to grow longer, your muscles to get stronger, and your body tissues to repair any tiny scratches or wear-and-tear from a busy day.",
+      "glitches": {
+        "low": "If there is too little Growth Hormone, your body will grow much slower than usual, and it will take your muscles longer to heal and recover after running or playing.",
+        "high": "If there is too much Growth Hormone, your bones and body parts will grow much faster and larger than normal, making you grow exceptionally tall."
+      },
+      "image": "./images/characters/growth-hormone.avif",
+      "altText": "Plush 3D Growth Hormone character"
+    },
+    "ghrelin": {
+      "title": "Ghrelin",
+      "badge": "Hunger Signal",
+      "themeColors": {
+        "main": "hsl(168, 60%, 84%)",
+        "darker": "hsl(168, 60%, 74%)"
+      },
+      "stats": {
+        "born": "Mainly inside your stomach lining when it gets empty.",
+        "travel": "I travel up through your bloodstream to talk directly to your brain's hunger center.",
+        "wakeup": "I wake up and get louder whenever your stomach has been empty for a few hours."
+      },
+      "job": "Ghrelin is your body's dinner bell! I am the hunger monster that makes your stomach rumble. I tell your brain exactly when it is time to stop playing and find a nutritious snack.",
+      "glitches": {
+        "low": "If there is too little Ghrelin, your body won't give you clear hunger signals, making you forget to eat and causing your energy levels to drop.",
+        "high": "If there is too much Ghrelin, your brain constantly thinks your stomach is empty, making you feel hungry and ready for a meal even right after you just ate."
+      },
+      "image": "./images/characters/ghrelin.avif",
+      "altText": "Plush 3D Ghrelin character"
+    },
+    "leptin": {
+      "title": "Leptin",
+      "badge": "Energy Balance",
+      "themeColors": {
+        "main": "hsl(256, 60%, 84%)",
+        "darker": "hsl(256, 60%, 74%)"
+      },
+      "stats": {
+        "born": "Your body's fat cells.",
+        "travel": "I travel through your bloodstream to the hypothalamus in your brain.",
+        "wakeup": "I wake up and release steady signals as you eat and store energy from your food."
+      },
+      "job": "Leptin is your body's full meter! I talk to your brain to say, 'Hey, we have plenty of fuel in the tank, you can stop eating now!' I help control your appetite so you don't overeat.",
+      "glitches": {
+        "low": "If there is too little Leptin, your brain thinks you are starving even when you have eaten plenty, making you feel constantly hungry.",
+        "high": "If Leptin stays too high for too long, your brain turns deaf to the signal, ignoring the message that you are full and causing you to keep eating."
+      },
+      "image": "./images/characters/leptin.avif",
+      "altText": "Plush 3D Leptin character"
+    },
+    "estrogen": {
+      "title": "Estrogen",
+      "badge": "Development",
+      "themeColors": {
+        "main": "hsl(350, 60%, 84%)",
+        "darker": "hsl(350, 60%, 74%)"
+      },
+      "stats": {
+        "born": "Mainly in the ovaries, with small amounts made by adrenal glands.",
+        "travel": "I travel through the bloodstream to guide bone growth and body changes.",
+        "wakeup": "I wake up in small amounts during childhood and increase significantly during puberty."
+      },
+      "job": "Estrogen is a master coordinator for growing up! I help keep your bones strong, protect your heart, and guide your body through the natural changes that transform a child into an adult.",
+      "glitches": {
+        "low": "If there is too little Estrogen, bones can become brittle and weak, and natural growth milestones during puberty can be delayed.",
+        "high": "If there is too much Estrogen, it can disrupt your body's natural timing, causing growth spurts to happen too early or shifting your moods rapidly."
+      },
+      "image": "./images/characters/estrogen.avif",
+      "altText": "Plush 3D Estrogen character"
+    },
+    "testosterone": {
+      "title": "Testosterone",
+      "badge": "Development",
+      "themeColors": {
+        "main": "hsl(25, 60%, 84%)",
+        "darker": "hsl(25, 60%, 74%)"
+      },
+      "stats": {
+        "born": "Mainly in the testes, with small amounts made by adrenal glands.",
+        "travel": "I travel through your bloodstream to work on your muscles, bones, and brain.",
+        "wakeup": "I release in steady small amounts during childhood and surge during puberty."
+      },
+      "job": "Testosterone is your body's muscle and strength coach! I help build big muscles, make your bones dense and strong, and work behind the scenes to guide growth changes as you get older.",
+      "glitches": {
+        "low": "If there is too little Testosterone, your muscles might feel weaker, you may feel tired more often, and natural growth milestones can slow down.",
+        "high": "If there is too much Testosterone, it can make your skin break out in spots, cause rapid mood swings, and make you feel unusually restless or grumpy."
+      },
+      "image": "./images/characters/testosterone.avif",
+      "altText": "Plush 3D Testosterone character"
     }
   },
   "scenarios": {
@@ -275,7 +375,7 @@
           "description": "When the lights go out, I flood your brain to signal that it is bedtime. I lower your body temperature and tuck your whole system into a deep, cozy sleep."
         },
         {
-          "id": "growth_hormone",
+          "id": "growth",
           "status": "SPIKING UP",
           "description": "While you sleep, I come out to build and repair! I patch up tired muscles, fix up cellular scratches, and help your bones grow a little bit taller every single night."
         },
