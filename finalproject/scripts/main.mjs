@@ -15,6 +15,12 @@ async function initApp() {
         console.error("Failed to load application configuration data:", error);
     }
 
+    if (document.querySelector("#interactiveBody") || document.querySelector(".pill-overlay")) {
+
+        const { initBodyScrollEngine } = await import("./animation/body-animation.mjs");
+        initBodyScrollEngine();
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
 
     if (urlParams.has("scenario")) {

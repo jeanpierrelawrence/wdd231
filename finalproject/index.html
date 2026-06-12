@@ -14,20 +14,23 @@
     <meta property="og:image:type" content="image/avif">
     <title>Home — Bodinode</title>
 
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/home.css">
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1><img src="images/bodinode-logo.svg" alt="Bodinode"></h1>
+        <img src="images/bodinode-logo.svg" alt="Bodinode">
         <button id="menu-button" class="menu-button" aria-label="Open Menu">
             <span class="menu-bar"></span>
             <span class="menu-bar"></span>
         </button>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="body-simulator.html">Body Simulator</a></li>
-                <li><a href="lab-history.html">Lab History</a></li>
+                <li><a href="index.html" class="mono">Home</a></li>
+                <li><a href="body-simulator.html" class="mono">Body Simulator</a></li>
+                <li><a href="lab-history.html" class="mono">Lab History</a></li>
             </ul>
         </nav>
     </header>
@@ -35,45 +38,42 @@
         <section>
             <img src="images/hero.svg" alt="Bodinode Hero">
             <h1 class="inline-heading">Meet the squad that runs your body.</h1>
-            <p class="inline-paragraph">
+            <p class="inline-paragraph text-light">
                 Inside you is a team of tiny, colorful messengers called hormones! They are like your body's personal text messages, telling your heart when to beat, your tummy when it's full, and your brain when it's time to sleep. Use our interactive map to discover all 15 characters, or hop into the Body State Simulator to test how your choices change your inner world!
             </p>
-            <a href="#body">Continue <img src="images/arrow.svg" alt="Arrow Down"></a>
+            <a href="#body" class="rounded-btn mono">Continue <img src="images/arrow.svg" alt="Arrow Down"></a>
         </section>
-        <section id="body">
-            <object 
-                id="interactiveBody" 
-                type="image/svg+xml" 
-                data="images/human-body.svg">
-            </object>
-            <div class="pill-carousel">
-                <div class="pill-group">
-                    <button class="pill-popup" data-hormone="endorphins">Endorphins</button>
-                    <button class="pill-popup" data-hormone="insulin">Insulin</button>
-                    <button class="pill-popup" data-hormone="cortisol">Cortisol</button>
+        <div class="scroll-runway">
+            <section id="body">
+                <div id="sticky-viewport">
+                    
+                    <object 
+                        id="interactiveBody" 
+                        type="image/svg+xml" 
+                        data="images/human-body.svg">
+                    </object>
+                    
+                    <div class="pill-overlay">
+                        <button class="pill-popup mono rounded-btn" data-hormone="seratonin" data-x="1260" data-y="100">Seratonin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="dopamine" data-x="1300" data-y="150">Dopamine<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="endorphins" data-x="1240" data-y="200">Endorphins<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="growth" data-x="1280" data-y="250">Growth-Hormone<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="melatonin" data-x="1370" data-y="295">Melatonin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="oxytocin" data-x="1280" data-y="350">Oxytocin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="thyroxin" data-x="1280" data-y="450">Thyroxin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="adrenaline" data-x="1240" data-y="550">Adrenaline<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="ghrelin" data-x="1320" data-y="635">Ghrelin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="cortisol" data-x="1200" data-y="700">Cortisol<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="insulin" data-x="1220" data-y="785">Insulin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="glucagon" data-x="1340" data-y="850">Glucagon<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="leptin" data-x="1280" data-y="960">Leptin<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="estrogen" data-x="1200" data-y="1050">Estrogen<img src="images/arrow.svg" alt="Arrow Down"></button>
+                        <button class="pill-popup mono rounded-btn" data-hormone="testosterone" data-x="1310" data-y="1100">Testosterone<img src="images/arrow.svg" alt="Arrow Down"></button>
+                    </div>
+
                 </div>
-                <div class="pill-group">
-                    <button class="pill-popup" data-hormone="adrenaline">Adrenaline</button>
-                    <button class="pill-popup" data-hormone="melatonin">Melatonin</button>
-                    <button class="pill-popup" data-hormone="oxytocin">Oxytocin</button>
-                </div>
-                <div class="pill-group">
-                    <button class="pill-popup" data-hormone="dopamine">Dopamine</button>
-                    <button class="pill-popup" data-hormone="seratonin">Seratonin</button>
-                    <button class="pill-popup" data-hormone="glucagon">Glucagon</button>
-                </div>
-                <div class="pill-group">
-                    <button class="pill-popup" data-hormone="thyroxin">Thyroxin</button>
-                    <button class="pill-popup" data-hormone="growth">Growth-Hormone</button>
-                    <button class="pill-popup" data-hormone="leptin">Leptin</button>
-                </div>
-                <div class="pill-group">
-                    <button class="pill-popup" data-hormone="ghrelin">Ghrelin</button>
-                    <button class="pill-popup" data-hormone="estrogen">Estrogen</button>
-                    <button class="pill-popup" data-hormone="testosterone">Testosterone</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer></footer>
     <dialog>
