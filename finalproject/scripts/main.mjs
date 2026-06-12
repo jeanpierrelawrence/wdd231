@@ -1,7 +1,11 @@
 import { initHormoneModals } from "./ui/modal.mjs";
 import "./ui/labHistory.mjs";
+import { initNavbarEngine } from "./ui/navigation.mjs";
 
 async function initApp() {
+
+    initNavbarEngine();
+
     try {
         const response = await fetch("./data/data.json");
         const data = await response.json();

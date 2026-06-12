@@ -29,7 +29,7 @@ export function initBodyScrollEngine() {
 
         let targetProgress = 0;   
         let smoothedProgress = 0; 
-        const easeFactor = 0.08;   
+        const easeFactor = 1;
 
         window.addEventListener('scroll', () => {
             const rect = runway.getBoundingClientRect();
