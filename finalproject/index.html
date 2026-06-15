@@ -79,7 +79,7 @@
     <dialog>
         <div class="modal-content" id="modal-content">
             <button class="modal-close" aria-label="Close modal">
-                <svg width="61" height="61" viewBox="0 0 61 61" fill="none">
+                <svg width="30" height="30" viewBox="0 0 61 61" fill="none">
                     <path class="close-line" d="M45.75 15.25L15.25 45.75" stroke="#959AE4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path class="close-line" d="M15.25 15.25L45.75 45.75" stroke="#959AE4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -90,20 +90,20 @@
                 <div class="modal-text-zone">
                 
                     <header class="profile-header">
-                        <span class="meta-category">Identity</span>
+                        <span class="meta-category mono">Identity</span>
                         <div class="title-row">
-                        <h2 id="modal-title">Leptin</h2>
-                        <button id="bookmark-btn" aria-label="Bookmark Leptin">
-                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-                                <path d="M8.66675 19.5C8.66675 13.3717 8.66675 10.3076 10.5706 8.40381C12.4744 6.5 15.5385 6.5 21.6667 6.5H30.3334C36.4617 6.5 39.5258 6.5 41.4296 8.40381C43.3334 10.3076 43.3334 13.3717 43.3334 19.5V34.2932C43.3334 40.1069 43.3334 43.0138 41.5041 43.9029C39.6748 44.792 37.3891 42.9961 32.8176 39.4042L31.3545 38.2547C28.7841 36.235 27.4988 35.2252 26.0001 35.2252C24.5013 35.2252 23.2161 36.235 20.6456 38.2547L19.1826 39.4042C14.6111 42.9961 12.3254 44.792 10.4961 43.9029C8.66675 43.0138 8.66675 40.1069 8.66675 34.2932V19.5Z" stroke="#221B1B" stroke-width="5"/>
-                                </svg>
-                        </button>
+                            <h2 id="modal-title">Leptin</h2>
+                            <button id="bookmark-btn" class="bookmark" aria-label="Bookmark">
+                                <svg width="30" height="30" viewBox="0 0 52 52" fill="none">
+                                    <path d="M8.66675 19.5C8.66675 13.3717 8.66675 10.3076 10.5706 8.40381C12.4744 6.5 15.5385 6.5 21.6667 6.5H30.3334C36.4617 6.5 39.5258 6.5 41.4296 8.40381C43.3334 10.3076 43.3334 13.3717 43.3334 19.5V34.2932C43.3334 40.1069 43.3334 43.0138 41.5041 43.9029C39.6748 44.792 37.3891 42.9961 32.8176 39.4042L31.3545 38.2547C28.7841 36.235 27.4988 35.2252 26.0001 35.2252C24.5013 35.2252 23.2161 36.235 20.6456 38.2547L19.1826 39.4042C14.6111 42.9961 12.3254 44.792 10.4961 43.9029C8.66675 43.0138 8.66675 40.1069 8.66675 34.2932V19.5Z" stroke="#000000" stroke-width="5"/>
+                                    </svg>
+                            </button>
                         </div>
-                        <span class="badge">Metabolism</span>
+                        <span class="badge rounded-btn">Metabolism</span>
                     </header>
 
                     <section class="profile-section" aria-labelledby="stats-heading">
-                        <span class="meta-category" id="stats-heading">Vital Stats</span>
+                        <span class="meta-category mono" id="stats-heading">Vital Stats</span>
                         
                         <div class="stat-block">
                         <h3>Where Am I Born?</h3>
@@ -122,13 +122,13 @@
                     </section>
 
                     <section class="profile-section" aria-labelledby="function-heading">
-                        <span class="pill badge" id="function-heading">Function</span>
+                        <span class="mono rounded-btn" id="function-heading">Function</span>
                         <h3>What Is My Job?</h3>
                         <p id="job">Leptin is your body's energy referee! It flies up to your brain to deliver a message saying you are totally full, happy, and ready to stop eating.</p>
                     </section>
 
                     <section class="profile-section glitch-panel" aria-labelledby="glitches-heading" >
-                        <span class="meta-category" id="glitches-heading">System Glitches</span>
+                        <span class="meta-category mono" id="glitches-heading">System Glitches</span>
                         <h3>What Happens If I Don't Work Properly?</h3>
                         
                         <p id="low">If there is <strong>too little Leptin</strong>, your brain never gets the "I'm full!" message, making you feel constantly starving even after a huge dinner.</p>
@@ -138,11 +138,11 @@
                 </div>
                 
                 <div class="modal-image-zone">
-                    <img src="#" alt="None" width="1500" height="1500" id="modal-img">
+                    <img src="#" alt="None" width="800" height="800" id="modal-img">
                 </div>
 
             </div>
-            </div>
+        </div>
     </dialog>
     <script src="scripts/main.mjs" type="module"></script>
 </body>

@@ -33,25 +33,21 @@ export async function loadSimulationResults() {
             const clone = template.content.cloneNode(true);
             const cardElement = clone.querySelector(".hormone-status-card");
 
-            // 1. Fetch character assets from global database mapping
             const masterCharacter = globalHormones[scenarioItem.id];
 
             if (!masterCharacter) {
                 console.error(`Data Mapping Error: ID "${scenarioItem.id}" found in scenario does not exist in global hormones database.`);
-                return; // Skip this card to prevent rendering empty elements or broken links
+                return;
             }
 
-            // 2. Hydrate content slots directly from the verified database objects
             cardElement.querySelector(".hormone-name").textContent = masterCharacter.title;
             cardElement.querySelector(".status-badge").textContent = scenarioItem.status;
             cardElement.querySelector(".scenario-description").textContent = scenarioItem.description;
 
-            // 3. Bind the exact image path configured globally
             const avatarImg = cardElement.querySelector(".hormone-avatar");
             avatarImg.src = masterCharacter.image; 
             avatarImg.alt = masterCharacter.altText || `${masterCharacter.title} character illustration`;
 
-            // 4. Layout formatting structures
             if (index === 0) {
                 cardElement.setAttribute("data-layout", "featured");
             } else {

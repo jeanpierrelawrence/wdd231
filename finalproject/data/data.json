@@ -44,8 +44,8 @@
       "title": "Cortisol",
       "badge": "Stress Response",
       "themeColors": {
-        "main": "hsl(236, 60%, 84%)",
-        "darker": "hsl(236, 60%, 74%)"
+        "main": "hsl(46, 60%, 84%)",
+        "darker": "hsl(46, 60%, 74%)"
       },
       "stats": {
         "born": "Your adrenal glands, which sit right on top of your kidneys.",

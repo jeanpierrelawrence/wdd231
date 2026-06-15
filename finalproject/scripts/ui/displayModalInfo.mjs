@@ -14,6 +14,10 @@ const nodes = {
 };
 
 export function displayModalInfo(character) {
+    if (!character || !character.themeColors || !character.stats || !character.glitches) {
+            console.error("Invalid character data payload provided to displayModalInfo.");
+            return;
+        }
 
     const saveButton = document.querySelector("#bookmark-btn");
 
@@ -21,13 +25,26 @@ export function displayModalInfo(character) {
     saveButton.parentNode.replaceChild(newSaveBtn, saveButton);
 
     newSaveBtn.addEventListener("click", () => {
-        saveHormone(character.title, character.image, character.themeColors.main);
+        toggleSaveHormone(character.title, character.image, character.themeColors.main);
     });
 
-    if (!character || !character.themeColors || !character.stats || !character.glitches) {
-        console.error("Invalid character data payload provided to displayModalInfo.");
-        return;
+    const history = JSON.parse(localStorage.getItem("labHistory")) || [];
+    const isAlreadySaved = history.some(item => item.name === character.title);
+
+    if (isAlreadySaved) {
+        newSaveBtn.classList.add("active");
+        newSaveBtn.setAttribute("aria-pressed", "true");
+    } else {
+        newSaveBtn.classList.remove("active");
+        newSaveBtn.setAttribute("aria-pressed", "false");
     }
+
+    newSaveBtn.addEventListener("click", () => {
+        const isNowActive = newSaveBtn.classList.toggle("active");
+        newSaveBtn.setAttribute("aria-pressed", isNowActive);
+        
+        toggleSaveHormone(character.title, character.image, character.themeColors.main, isNowActive);
+    });
 
     nodes.close.forEach(line => {
         line.style.stroke = character.themeColors.darker;
@@ -37,6 +54,7 @@ export function displayModalInfo(character) {
     nodes.glitchPanel.style.backgroundColor = character.themeColors.darker;
 
     nodes.title.textContent = character.title;
+    nodes.badge.style.backgroundColor = character.themeColors.darker;
     nodes.badge.textContent = character.badge;
 
     nodes.born.textContent = character.stats.born;
@@ -51,21 +69,24 @@ export function displayModalInfo(character) {
     nodes.image.alt = character.altText;
 }
 
-function saveHormone(name, imageUrl, themeColor) {
-    const history = JSON.parse(localStorage.getItem("labHistory")) || [];
+function toggleSaveHormone(name, imageUrl, themeColor, shouldSave) {
+    let history = JSON.parse(localStorage.getItem("labHistory")) || [];
 
-    const alreadySaved = history.some(item => item.name === name);
-    if (alreadySaved) {
-        console.log(`${name} is already saved in lab history.`);
-        return;
+    if (shouldSave) {
+        const alreadySaved = history.some(item => item.name === name);
+        if (!alreadySaved) {
+            history.push({
+                name: name,
+                image: imageUrl,
+                backgroundColor: themeColor
+            });
+            localStorage.setItem("labHistory", JSON.stringify(history));
+            console.log(`${name} successfully bookmarked.`);
+        }
+    } else {
+
+        history = history.filter(item => item.name !== name);
+        localStorage.setItem("labHistory", JSON.stringify(history));
+        console.log(`${name} removed from bookmarks.`);
     }
-
-    history.push({
-        name: name,
-        image: imageUrl,
-        backgroundColor: themeColor
-    });
-
-    localStorage.setItem("labHistory", JSON.stringify(history));
-    window.alert(`${name} successfully bookmarked.`);
 }
