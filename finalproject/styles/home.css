@@ -243,7 +243,7 @@ dialog .badge {
 /* ==========================================================================
    DESKTOP MODAL LAYOUT TRANSITION (Min-width: 768px / 1024px)
    ========================================================================== */
-@media (min-width: 48rem) {
+@media only screen and (min-width: 48rem) {
     dialog {
         max-width: 1000px;
         width: 90%;

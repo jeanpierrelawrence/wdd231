@@ -125,6 +125,7 @@ h1, p {
     box-shadow: var(--shadow);
     padding: var(--space-2) var(--space-6);
     border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: var(--color-nuetral-light);
 }
 
 .section-padding {

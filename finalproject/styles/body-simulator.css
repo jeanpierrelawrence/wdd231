@@ -112,3 +112,40 @@ form h2 {
 .scenario-option input[type="radio"]:checked + .custom-radio::after {
     transform: translate(-50%, -50%) scale(1);
 }
+
+@media only screen and (min-width: 48rem) {
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    form h2 {
+        font-size: 2rem;
+    }
+
+    .left figure img {
+        width: 400px;
+    }
+
+    .gradient-bg, form {
+        border-radius: var(--radius-standard);
+    }
+
+    .right {
+        padding: 2rem;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media only screen and (min-width: 75rem) {
+    .left figure img {
+        width: 750px;
+    }
+
+    .scenarios-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
