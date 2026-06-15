@@ -28,7 +28,7 @@
     --fw-bold: 600;
 
     /* Line Heights */
-    --line-height-none: 1;
+    --line-height-none: 1.2;
 
     /* ----------------------------------------------------------------------
        3. SHAPE & ELEVATION (Borders, Borders Radii, Box Shadows)
@@ -85,7 +85,7 @@ body {
     color: var(--color-nuetral-dark);
     font-family: var(--font-family-sans);
     font-size: var(--fs-lg);
-    line-height: var(--line-height-normal);
+    line-height: var(--line-height-none);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -127,6 +127,10 @@ h1, p {
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.section-padding {
+    padding: 2rem;
+}
+
 body.nav-open {
     overflow: hidden;
     height: 100vh;
@@ -136,6 +140,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem;
 }
 
 header img {
@@ -235,8 +240,45 @@ body.nav-open #primary-nav ul li:nth-child(3) { transition-delay: 0.7s; }
 @media only screen and (min-width: 48rem) {
     
     :root {
+
+        /* Line Heights */
+        --line-height-none: 1.2;
+
+        /* Font Sizes */
         --fs-sm: 0.875rem;
         --fs-lg: 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-nav {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        transform: none;
+        z-index: 1;
+    }
+
+    .primary-nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .primary-nav ul li {
+        margin: 0;
+        opacity: 1;
+        transform: none;
     }
 
 }
@@ -244,8 +286,17 @@ body.nav-open #primary-nav ul li:nth-child(3) { transition-delay: 0.7s; }
 @media only screen and (min-width: 75rem) {
     
     :root {
-        --fs-sm: 1rem;
-        --fs-lg: 4rem;
+
+        /* Line Heights */
+        --line-height-none: 1.1;
+
+        /* Font Sizes */
+        --fs-sm: 0.875rem;
+        --fs-lg: 3.5rem;
+    }
+
+    .primary-nav ul {
+        gap: 5rem;
     }
 
 }

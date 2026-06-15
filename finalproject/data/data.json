@@ -204,8 +204,8 @@
       "title": "Growth Hormone",
       "badge": "Growth & Repair",
       "themeColors": {
-        "main": "hsl(216, 60%, 84%)",
-        "darker": "hsl(216, 60%, 74%)"
+        "main": "hsl(232, 60%, 84%)",
+        "darker": "hsl(232, 60%, 74%)"
       },
       "stats": {
         "born": "Your pituitary gland, a tiny organ at the base of your brain.",

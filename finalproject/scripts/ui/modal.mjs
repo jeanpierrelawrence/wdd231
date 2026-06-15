@@ -14,6 +14,7 @@ export function initHormoneModals(hormones) {
             if (selectedHormone) {
                 displayModalInfo(selectedHormone);
                 dialog.showModal();
+                document.body.classList.add("modal-open");
             } else {
                 console.warn(`Hormone data reference not found for key: "${hormoneKey}"`);
             }
@@ -22,6 +23,7 @@ export function initHormoneModals(hormones) {
 
     closeModalBtn.addEventListener("click", () => {
         dialog.close();
+        document.body.classList.remove("modal-open");
     })
 }
 
