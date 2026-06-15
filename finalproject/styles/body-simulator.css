@@ -1,0 +1,114 @@
+.gradient-bg {
+    background-image: radial-gradient(
+        var(--color-accent-purple),
+        var(--color-accent-mint),
+        var(--color-accent-yellow)
+    );
+}
+
+.gradient-bg form {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+form {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.left-figure {
+    display: grid;
+    place-content: center;
+}
+
+.left figure img { 
+    width: 350px;
+    height: auto;
+}
+
+form h2 {
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    text-align: center;
+}
+
+.scenarios-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scenario-option {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: var(--radius-standard);
+    padding: 1rem 3rem;
+    background-color: var(--color-nuetral-light);
+    cursor: pointer;
+    position: relative;
+}
+
+.option-content {
+    font-size: var(--fs-md);
+}
+
+.option-content h3 {
+    padding-bottom: 0.5rem;
+}
+
+.scenario-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.scenario-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    background-color: transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    
+    width: 1.4rem; 
+    height: 1.4rem;
+
+    background-color: transparent;
+    border: 1px solid #ffffff; 
+    border-radius: 50%;
+    
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2) ;
+}
+
+.scenario-option input[type="radio"]:checked + .custom-radio {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.scenario-option input[type="radio"]:checked + .custom-radio::after {
+    transform: translate(-50%, -50%) scale(1);
+}
