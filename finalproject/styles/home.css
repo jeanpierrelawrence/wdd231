@@ -111,6 +111,10 @@ dialog {
 
 dialog .badge {
     font-size: var(--fs-sm);
+
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
 }
 
 .bookmark {
@@ -165,6 +169,10 @@ dialog .badge {
 
 .profile-section:nth-child(3) #function-heading {
     background-color: var(--color-nuetral-light);
+
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
 }
 
 .profile-section:nth-child(3) h3 {
