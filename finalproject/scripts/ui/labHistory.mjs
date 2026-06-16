@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadLabHistory();
+    initClearHistoryButton();
 });
 
 function loadLabHistory() {
@@ -9,7 +10,7 @@ function loadLabHistory() {
     const history = JSON.parse(localStorage.getItem("labHistory")) || [];
 
     if (history.length === 0) {
-        historyContainer.innerHTML = `<p class="empty-state">No bookmarked hormones found in your lab records yet.</p>`;
+        historyContainer.innerHTML = `<p class="empty-state text-light">No bookmarked hormones found in your lab records yet.</p>`;
         return;
     }
 
@@ -17,14 +18,24 @@ function loadLabHistory() {
 
     history.forEach(item => {
         const card = document.createElement("figure");
-        card.style.backgroundColor = item.backgroundColor;
         card.className = "saved-hormone-card";
         
         card.innerHTML = `
-            <img src="${item.image}" alt="Plush 3D ${item.name} character" width=300>
-            <figcaption>${item.name}</figcaption>
+            <img src="${item.image}" alt="Plush 3D ${item.name} character" style="background-color: ${item.backgroundColor}" width=300>
+            <figcaption class="mono">${item.name}</figcaption>
         `;
         
         historyContainer.appendChild(card);
+    });
+}
+
+function initClearHistoryButton() {
+    const clearBtn = document.getElementById("clear-history");
+    
+    if (!clearBtn) return; 
+
+    clearBtn.addEventListener("click", () => {
+        localStorage.removeItem("labHistory"); 
+        loadLabHistory();
     });
 }

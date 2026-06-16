@@ -1,0 +1,40 @@
+.clear {
+    display: block;
+    margin-inline: auto;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.saved-hormone-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.saved-hormone-card img {
+    width: 250px;
+    height: auto;
+    border-radius: var(--radius-standard);
+    box-shadow: var(--shadow);
+}
+
+.saved-hormone-card figcaption {
+    padding-top: 0.5rem;
+}
+
+#lab-history-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4rem;
+    gap: 2rem;
+}
+
+@media only screen and (min-width: 75rem) {
+    
+    #lab-history-grid {
+        justify-content: start;
+    }
+
+}
