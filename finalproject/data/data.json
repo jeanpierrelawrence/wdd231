@@ -303,7 +303,7 @@
   },
   "scenarios": {
     "running": {
-      "title": "Going for a run",
+      "title": "Going for a run.",
       "summary": "During running, your body releases two main hormones.",
       "activeHormones": [
         {
@@ -324,7 +324,7 @@
       ]
     },
     "stress": {
-      "title": "Spooked or Stressed",
+      "title": "Spooked or Stressed.",
       "summary": "When you get a big scare, your body goes on high alert to keep you safe.",
       "activeHormones": [
         {
@@ -345,7 +345,7 @@
       ]
     },
     "fasting": {
-      "title": "Skipping a Meal",
+      "title": "Skipping a Meal.",
       "summary": "When you havent eaten, your body cleverly switches over to its backup batteries.",
       "activeHormones": [
         {

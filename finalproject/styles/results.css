@@ -1,0 +1,155 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+}
+
+.scenario-header {
+    display: block;
+    padding: 0;
+}
+
+.hormone-status-card {
+    text-align: center;
+    border-radius: var(--radius-standard);
+    padding: 2rem;
+}
+
+.hormone-status-card .hormone-avatar {
+    width: 250px;
+    height: auto;
+}
+
+.hormone-name {
+    font-size: var(--fs-md);
+}
+
+.scenario-description {
+    display: block;
+    font-size: var(--fs-sm);
+}
+
+.status-badge {
+    display: block;
+    font-size: var(--fs-sm);
+    padding-block: 0.5rem 2rem;
+}
+
+@media only screen and (min-width: 48rem) {
+
+    .hormone-name {
+        font-size: var(--fs-lg);
+    }
+
+    .scenario-description {
+        display: block;
+        font-size: var(--fs-md);
+    }
+
+    .hormone-status-card .hormone-avatar {
+        width: 450px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 75rem) {
+
+    .hormone-name {
+        font-size: 1.5rem;
+    }
+
+    .cards-grid {
+        display: grid;
+        gap: 2rem;
+        padding-block: 3rem;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 1.5rem;
+    }
+
+    .hormone-status-card[data-layout="featured"] {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 2.5rem;
+    }
+
+    .hormone-status-card[data-layout="featured"] .hormone-name {
+        order: 1;
+        font-size: 1.75rem;
+    }
+
+    .hormone-status-card[data-layout="featured"] .hormone-avatar {
+        width: 150%;
+        max-width: 500px;
+        height: auto;
+        margin-block: 1.5rem;
+        order: 2;
+    }
+
+    .hormone-status-card[data-layout="featured"] .status-badge {
+        order: 3;
+        margin-bottom: 0.5rem;
+    }
+
+    .hormone-status-card[data-layout="featured"] .scenario-description {
+        order: 4;
+    }
+
+    .hormone-status-card[data-layout="row"] {
+        grid-column: 2;
+        
+        display: grid;
+        grid-template-columns: 160px 1fr auto;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 0;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .hormone-status-card[data-layout="row"] .hormone-avatar {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: 150%;
+        margin-left: -35px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hormone-status-card[data-layout="row"] .hormone-name {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+        text-align: left;
+    }
+
+    .hormone-status-card[data-layout="row"] .status-badge {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        text-align: right;
+        padding: 0;
+    }
+
+    .hormone-status-card[data-layout="row"] .scenario-description {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        margin: 0;
+        align-self: center;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+
+}

@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/results.css">
 </head>
 <body>
     <header>
@@ -33,10 +34,10 @@
             </ul>
         </nav>
     </header>
-    <main class="simulator-results-container">
-        <header class="scenario-header">
+    <main class="simulator-results-container section-padding">
+        <header class="scenario-header section-padding">
             <h1 id="scenario-title">...</h1>
-            <p id="scenario-summary">...</p>
+            <p id="scenario-summary" class="text-light">...</p>
         </header>
 
         <div class="results-display-matrix">
@@ -44,13 +45,13 @@
             </div>
         </div>
 
-        <a href="body-simulator.html">Go Back <img src="./images/arrow.svg" alt="Arrow"></a>
+        <a href="body-simulator.html" class="rounded-btn mono">Go Back <img src="./images/arrow.svg" alt="Arrow"></a>
 
         <template id="hormone-card-template">
             <article class="hormone-status-card" data-layout="">
                 <h3 class="hormone-name"></h3>
                 <img class="hormone-avatar" src="" alt="">
-                <span class="status-badge"></span>
+                <span class="status-badge mono"></span>
                 <p class="scenario-description"></p>
             </article>
         </template>

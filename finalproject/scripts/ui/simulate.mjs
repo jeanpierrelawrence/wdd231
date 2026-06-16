@@ -48,6 +48,12 @@ export async function loadSimulationResults() {
             avatarImg.src = masterCharacter.image; 
             avatarImg.alt = masterCharacter.altText || `${masterCharacter.title} character illustration`;
 
+            if (masterCharacter.themeColors && masterCharacter.themeColors.main) {
+                cardElement.style.backgroundColor = masterCharacter.themeColors.main;
+            } else if (masterCharacter.color) { 
+                cardElement.style.backgroundColor = masterCharacter.color;
+            }
+
             if (index === 0) {
                 cardElement.setAttribute("data-layout", "featured");
             } else {
