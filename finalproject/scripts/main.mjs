@@ -31,6 +31,13 @@ async function initApp() {
         const { loadSimulationResults } = await import("./ui/simulate.mjs");
         loadSimulationResults();
     }
+
+    const year = document.getElementById("currentyear");
+
+    const today = new Date();
+    year.textContent = today.getFullYear()
+
+    document.getElementById("lastModified").textContent = document.lastModified;
 }
 
 document.addEventListener("DOMContentLoaded", initApp);
